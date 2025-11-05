@@ -1,0 +1,7 @@
+Model,Final Return (%),Final Account Value ($),Initial Capital ($),Total Data Points,Inflection Points,Sharpe Ratio
+claude-sonnet-4-5,-12.79,8720.93,10000,5110,1,0.044
+deepseek-chat-v3.1,26.82,12682.10,10000,4256,2,1.042
+gemini-2.5-pro,-63.49,3650.76,10000,5123,2,-1.002
+gpt-5,-72.93,2707.18,10000,3714,1,-0.814
+grok-4,-14.93,8506.79,10000,3650,2,0.301
+qwen3-max,42.89,14288.89,10000,6747,1,0.102

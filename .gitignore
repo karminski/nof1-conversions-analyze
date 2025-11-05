@@ -1,0 +1,19 @@
+
+## conversions
+conversions/
+conversions_deduped/
+.specstory/
+
+## config
+config.py
+
+## logs
+logs/
+
+## data
+data/
+
+## models
+models/
+
+## notebooks

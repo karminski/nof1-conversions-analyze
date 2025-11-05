@@ -1,0 +1,2718 @@
+{
+  "raw_prices": [
+    {
+      "timestamp": 1761227448.434665,
+      "price": 109412.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761232375.319102,
+      "price": 109831.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761232647.392861,
+      "price": 109673.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761232835.233429,
+      "price": 109918.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761233770.682852,
+      "price": 109990.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761233783.344266,
+      "price": 109914.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761233801.810489,
+      "price": 109969.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761233882.167393,
+      "price": 110079.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761234250.880486,
+      "price": 109821.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761234268.718679,
+      "price": 109908.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761245321.841135,
+      "price": 110539.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761245467.388595,
+      "price": 110528.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761248682.796291,
+      "price": 110452.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761248821.833479,
+      "price": 110436.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761249952.36554,
+      "price": 109989.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761250058.449915,
+      "price": 110046.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761250185.298745,
+      "price": 110052.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761250687.442372,
+      "price": 109930.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761255314.736544,
+      "price": 109611.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761255450.053903,
+      "price": 109536.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761256972.831335,
+      "price": 109524.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761257111.209666,
+      "price": 109634.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761259312.996691,
+      "price": 110004.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761259458.174174,
+      "price": 109987.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761259574.745932,
+      "price": 109987.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761264327.490826,
+      "price": 110080.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761264454.872763,
+      "price": 110002.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761264996.573146,
+      "price": 110197.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761267559.020867,
+      "price": 110657.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761267703.262442,
+      "price": 110501.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761269135.872276,
+      "price": 110315.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761280848.20197,
+      "price": 111322.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761281114.718344,
+      "price": 111179.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761281601.654147,
+      "price": 111189.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761281810.653241,
+      "price": 111223.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761282141.556876,
+      "price": 111199.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761284541.734058,
+      "price": 111155.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761284663.579776,
+      "price": 111083.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761284927.2636,
+      "price": 111180.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761286506.092853,
+      "price": 111229.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761288275.494606,
+      "price": 111439.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761289542.896798,
+      "price": 111451.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761290113.321978,
+      "price": 111206.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761293216.342089,
+      "price": 111048.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761294187.311248,
+      "price": 111007.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761294448.44356,
+      "price": 111006.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761295130.043777,
+      "price": 110880.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761295856.082112,
+      "price": 111118.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761297517.864733,
+      "price": 111389.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761297851.639369,
+      "price": 111383.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761299168.159935,
+      "price": 111318.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761299551.672354,
+      "price": 111499.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761301711.85167,
+      "price": 111131.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761307941.815577,
+      "price": 111261.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761309301.963149,
+      "price": 111029.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761309710.843518,
+      "price": 111599.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761310635.362151,
+      "price": 111303.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761313309.216569,
+      "price": 111091.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761313753.244852,
+      "price": 110800.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761314040.759697,
+      "price": 110690.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761314042.838482,
+      "price": 110538.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761314116.477802,
+      "price": 110610.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761314201.961415,
+      "price": 110591.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761314232.618457,
+      "price": 110870.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761314910.426673,
+      "price": 110514.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761315039.482955,
+      "price": 110480.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761315269.928474,
+      "price": 110401.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761315330.012568,
+      "price": 110520.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761315457.770301,
+      "price": 110578.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761315891.872969,
+      "price": 110063.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761316195.85658,
+      "price": 110034.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761318171.186363,
+      "price": 110269.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761320288.184425,
+      "price": 110519.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761320456.336855,
+      "price": 110418.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761322302.667261,
+      "price": 109960.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761322325.114933,
+      "price": 109865.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761322961.353014,
+      "price": 110325.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761323223.008685,
+      "price": 110291.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761323346.879649,
+      "price": 110271.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761323754.470083,
+      "price": 110299.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761323896.004124,
+      "price": 110192.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761324041.918417,
+      "price": 110096.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761324964.145621,
+      "price": 110174.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761325085.464135,
+      "price": 110242.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761325805.194674,
+      "price": 110451.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761332191.364078,
+      "price": 110622.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761341776.001628,
+      "price": 110943.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761341912.841527,
+      "price": 110987.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761346585.768052,
+      "price": 111032.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761366438.75541,
+      "price": 111399.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761376476.649153,
+      "price": 111497.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761378541.630826,
+      "price": 111533.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761378656.072511,
+      "price": 111515.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761380310.997072,
+      "price": 111643.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761380424.19551,
+      "price": 111634.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761380915.852328,
+      "price": 111764.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761390073.466702,
+      "price": 111677.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761391400.629955,
+      "price": 111651.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761392323.714014,
+      "price": 111686.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761392459.663447,
+      "price": 111717.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761393213.822208,
+      "price": 111722.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761393349.646964,
+      "price": 111661.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761393883.170375,
+      "price": 111596.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761395514.227349,
+      "price": 111769.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761395787.556154,
+      "price": 111735.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761403259.121788,
+      "price": 111635.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761403516.46207,
+      "price": 111664.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761403791.762861,
+      "price": 111638.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761403927.400196,
+      "price": 111635.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761404942.912425,
+      "price": 111529.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761412458.235574,
+      "price": 111475.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761412718.73488,
+      "price": 111435.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761413003.116799,
+      "price": 111393.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761414038.39378,
+      "price": 111329.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761417482.543053,
+      "price": 111651.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761419160.275241,
+      "price": 111683.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761419663.010682,
+      "price": 111656.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761419779.236928,
+      "price": 111650.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761420661.149595,
+      "price": 111667.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761421799.779058,
+      "price": 111657.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761424381.899139,
+      "price": 111584.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761424659.130566,
+      "price": 111517.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761425547.362544,
+      "price": 111538.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761426287.151371,
+      "price": 111479.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761427803.857375,
+      "price": 111466.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761428794.995477,
+      "price": 111378.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761434017.085334,
+      "price": 111632.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761434144.868637,
+      "price": 111621.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761438334.365884,
+      "price": 111664.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761439184.364863,
+      "price": 111859.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761444335.891555,
+      "price": 111600.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761444462.603761,
+      "price": 111494.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761445571.548897,
+      "price": 111630.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761451087.329665,
+      "price": 111342.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761451224.101002,
+      "price": 111274.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761452261.149951,
+      "price": 111371.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761453659.161644,
+      "price": 111445.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761459452.793087,
+      "price": 111569.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761459585.045367,
+      "price": 111555.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761460203.335553,
+      "price": 111616.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761463969.445086,
+      "price": 111666.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761468370.529838,
+      "price": 111852.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761470715.42545,
+      "price": 112126.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761470807.965993,
+      "price": 112119.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761470810.948491,
+      "price": 112370.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761476460.99455,
+      "price": 112489.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761478187.304181,
+      "price": 112780.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761478558.150479,
+      "price": 112785.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761479058.40632,
+      "price": 113030.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761479182.548675,
+      "price": 113201.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761480144.33987,
+      "price": 113420.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761480303.56508,
+      "price": 113420.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761480674.187075,
+      "price": 113487.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761485437.221492,
+      "price": 113614.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761486589.157239,
+      "price": 113859.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761516265.558692,
+      "price": 113759.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761516353.09873,
+      "price": 113997.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761516410.096696,
+      "price": 114434.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761516486.391548,
+      "price": 113791.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761516781.820539,
+      "price": 114620.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761518074.733079,
+      "price": 114433.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761525362.738522,
+      "price": 114993.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761525472.900307,
+      "price": 115052.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761525586.575951,
+      "price": 115010.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761527373.510133,
+      "price": 114880.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761527606.628557,
+      "price": 114867.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761527737.275236,
+      "price": 115045.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761532062.744472,
+      "price": 115199.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761532212.035623,
+      "price": 115195.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761532371.012146,
+      "price": 115055.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761532816.629118,
+      "price": 114956.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761535739.771052,
+      "price": 115069.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761546619.421303,
+      "price": 115711.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761546750.587039,
+      "price": 115701.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761550875.327599,
+      "price": 115841.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761552911.739148,
+      "price": 115523.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761553048.536544,
+      "price": 115501.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761556091.254526,
+      "price": 114991.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761556232.821487,
+      "price": 114872.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761566334.829529,
+      "price": 115373.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761566336.519185,
+      "price": 115395.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761566455.083854,
+      "price": 115454.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761567348.679591,
+      "price": 115278.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761584097.555215,
+      "price": 115541.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761584373.527471,
+      "price": 115585.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761591306.025823,
+      "price": 115495.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761591864.477831,
+      "price": 114997.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761600838.265673,
+      "price": 114173.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761600858.297664,
+      "price": 114344.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761601453.997876,
+      "price": 114361.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761605524.316867,
+      "price": 114249.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761607041.922029,
+      "price": 114024.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761607168.280663,
+      "price": 113866.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761621319.24326,
+      "price": 113916.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761621444.038488,
+      "price": 113799.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761622794.560333,
+      "price": 113841.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761625485.002414,
+      "price": 113856.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761627851.617708,
+      "price": 113899.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761631285.759192,
+      "price": 113633.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761631401.278341,
+      "price": 113672.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761633534.76108,
+      "price": 113917.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761633940.250192,
+      "price": 114017.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761634211.821552,
+      "price": 114021.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761635918.454062,
+      "price": 114130.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761636871.927479,
+      "price": 114259.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761640888.026923,
+      "price": 114403.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761641374.962075,
+      "price": 114399.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761645458.134135,
+      "price": 114530.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761645576.286016,
+      "price": 114516.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761646621.166578,
+      "price": 114445.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761646750.036333,
+      "price": 114496.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761662948.832901,
+      "price": 114254.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761663090.551734,
+      "price": 114713.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761676217.14624,
+      "price": 115018.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761676868.177181,
+      "price": 114677.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761679460.389743,
+      "price": 114303.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761679592.405209,
+      "price": 113995.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761681170.869087,
+      "price": 113817.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761681227.687532,
+      "price": 113598.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761681272.997811,
+      "price": 113892.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761681488.832824,
+      "price": 113662.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761681813.166265,
+      "price": 113654.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761681967.983353,
+      "price": 113572.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761681995.069704,
+      "price": 113553.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761682114.14915,
+      "price": 113143.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761682273.561317,
+      "price": 113143.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761682393.1487,
+      "price": 113165.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761682516.264494,
+      "price": 112960.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761682629.705994,
+      "price": 112972.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761682753.678245,
+      "price": 112835.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761682806.363727,
+      "price": 112695.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761682938.469285,
+      "price": 112742.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761682943.442199,
+      "price": 112725.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761683833.872271,
+      "price": 112527.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761683989.450653,
+      "price": 112363.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761684065.624775,
+      "price": 112527.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761684198.321853,
+      "price": 112532.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761684767.943626,
+      "price": 112799.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761684833.3353,
+      "price": 112730.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761684875.504636,
+      "price": 112636.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761685642.296231,
+      "price": 112585.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761685759.979213,
+      "price": 112721.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761687509.487411,
+      "price": 112965.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761688138.868689,
+      "price": 113073.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761695416.247598,
+      "price": 113005.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761695683.796245,
+      "price": 112946.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761697976.408071,
+      "price": 112679.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761698238.487222,
+      "price": 112627.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761699932.346417,
+      "price": 112446.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761700661.299911,
+      "price": 112287.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761700778.445282,
+      "price": 112327.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761701044.5856,
+      "price": 112284.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761701339.689228,
+      "price": 112074.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761701438.408864,
+      "price": 112248.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761705725.762558,
+      "price": 112556.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761705853.075063,
+      "price": 112562.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761719806.749949,
+      "price": 112963.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761720076.015641,
+      "price": 113022.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761720311.348423,
+      "price": 113013.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761720552.119863,
+      "price": 113076.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761725128.826316,
+      "price": 113596.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761727468.946776,
+      "price": 113028.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761734815.6484,
+      "price": 113048.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761734945.961098,
+      "price": 113061.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761736104.229275,
+      "price": 112883.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761736993.879682,
+      "price": 113139.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761737092.108609,
+      "price": 113095.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761738469.156996,
+      "price": 113048.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761752294.057681,
+      "price": 111778.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761753487.868173,
+      "price": 111619.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761753636.118516,
+      "price": 111400.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761753788.306331,
+      "price": 111580.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761753920.858173,
+      "price": 111417.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761754017.233448,
+      "price": 111415.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761754122.02862,
+      "price": 111339.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761754155.314617,
+      "price": 111345.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761754222.066231,
+      "price": 111258.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761754335.178143,
+      "price": 111313.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761754485.302119,
+      "price": 111111.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761754622.101029,
+      "price": 110972.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761754781.976082,
+      "price": 111156.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761754925.725698,
+      "price": 111039.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761757906.563212,
+      "price": 111317.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761758034.313415,
+      "price": 111264.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761759843.09386,
+      "price": 111607.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761759966.050896,
+      "price": 111662.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761761363.215256,
+      "price": 111518.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761761484.087111,
+      "price": 111700.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761761636.668774,
+      "price": 111424.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761763182.387756,
+      "price": 110900.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761763599.968438,
+      "price": 109862.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761763740.401879,
+      "price": 110141.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761763827.992509,
+      "price": 110032.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761763990.4282,
+      "price": 110251.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761764276.607532,
+      "price": 111157.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761764571.204059,
+      "price": 110892.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761767010.648714,
+      "price": 110389.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761767135.148961,
+      "price": 110270.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761769595.500106,
+      "price": 111127.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761770151.251747,
+      "price": 111297.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761773409.763937,
+      "price": 111621.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761773522.55764,
+      "price": 111620.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761773961.594869,
+      "price": 111853.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761777064.964485,
+      "price": 111312.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761777197.674453,
+      "price": 111272.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761779919.096998,
+      "price": 110653.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761781708.925495,
+      "price": 110084.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761782931.799986,
+      "price": 110089.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761783073.388959,
+      "price": 109877.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761783286.22088,
+      "price": 109804.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761792304.92723,
+      "price": 111046.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761792425.399895,
+      "price": 111037.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761797145.213063,
+      "price": 110724.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761797627.952771,
+      "price": 110217.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761797768.493873,
+      "price": 110077.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761797835.44558,
+      "price": 109973.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761797879.847091,
+      "price": 109920.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761798464.516584,
+      "price": 109657.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761798587.3097,
+      "price": 108833.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761798695.497902,
+      "price": 108335.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761799715.39564,
+      "price": 109212.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761800906.835224,
+      "price": 108696.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761803438.100637,
+      "price": 110187.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761803535.659583,
+      "price": 110248.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761803701.063114,
+      "price": 110065.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761803839.251772,
+      "price": 110430.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761809509.203628,
+      "price": 111397.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761809643.821119,
+      "price": 111324.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761820015.787304,
+      "price": 110099.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761820150.931944,
+      "price": 110118.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761820905.584405,
+      "price": 110138.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761821946.84667,
+      "price": 110160.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761825921.760775,
+      "price": 109808.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761826067.88779,
+      "price": 109709.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761826143.01218,
+      "price": 109703.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761826245.019563,
+      "price": 109530.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761826464.887682,
+      "price": 109421.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761827218.136092,
+      "price": 109039.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761827314.209126,
+      "price": 108842.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761827393.755505,
+      "price": 108792.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761827674.59171,
+      "price": 108758.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761828449.123318,
+      "price": 108687.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761828454.165093,
+      "price": 108640.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761828601.271773,
+      "price": 108537.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761828868.715363,
+      "price": 108571.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761828901.183714,
+      "price": 108397.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761829167.978867,
+      "price": 108522.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761829263.571639,
+      "price": 108546.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761829408.573121,
+      "price": 108464.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761829498.633824,
+      "price": 108459.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761829813.261063,
+      "price": 108646.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761829937.122795,
+      "price": 108626.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761830109.11962,
+      "price": 108608.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761830713.568263,
+      "price": 108403.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761831647.439828,
+      "price": 108418.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761831897.488802,
+      "price": 107720.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761832014.997713,
+      "price": 107867.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761832582.548718,
+      "price": 107459.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761832842.509694,
+      "price": 108023.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761832949.457062,
+      "price": 107731.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761833083.352432,
+      "price": 107649.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761833083.745282,
+      "price": 107892.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761833274.714448,
+      "price": 107923.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761835365.574153,
+      "price": 108109.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761835490.45732,
+      "price": 108370.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761840305.434159,
+      "price": 107626.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761840389.886196,
+      "price": 107699.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761840898.804485,
+      "price": 108123.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761843279.956698,
+      "price": 108131.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761843321.965993,
+      "price": 108120.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761843470.257251,
+      "price": 108006.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761844833.65956,
+      "price": 107394.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761844929.045077,
+      "price": 107072.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761844954.542866,
+      "price": 107377.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761845236.358232,
+      "price": 106923.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761845544.383946,
+      "price": 107250.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761845630.009763,
+      "price": 107299.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761846007.56914,
+      "price": 107074.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761847428.966308,
+      "price": 107445.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761848053.869118,
+      "price": 107358.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761850071.514029,
+      "price": 106989.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761850593.659688,
+      "price": 107200.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761851569.548462,
+      "price": 106973.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761853146.612135,
+      "price": 106861.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761853230.985256,
+      "price": 106748.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761853849.513611,
+      "price": 106569.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761853866.731679,
+      "price": 106648.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761853944.150623,
+      "price": 106574.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761853976.70166,
+      "price": 106616.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761854624.49195,
+      "price": 106501.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761854750.145079,
+      "price": 106699.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761854790.35336,
+      "price": 106491.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761855065.162528,
+      "price": 106751.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761855117.286092,
+      "price": 106769.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761855181.483031,
+      "price": 106801.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761855213.698606,
+      "price": 106751.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761855567.611406,
+      "price": 106831.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761856924.456034,
+      "price": 107180.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761863145.635118,
+      "price": 107736.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761863715.450121,
+      "price": 107615.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761868685.495004,
+      "price": 108349.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761868960.812861,
+      "price": 108360.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761869163.974079,
+      "price": 108441.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761869327.166316,
+      "price": 108533.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761871249.383317,
+      "price": 108563.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761871315.357516,
+      "price": 108604.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761871478.812355,
+      "price": 108671.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761871591.991503,
+      "price": 108689.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761871627.145662,
+      "price": 108679.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761871827.986947,
+      "price": 108815.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761872185.691273,
+      "price": 109408.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761872694.459465,
+      "price": 109541.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761873037.184981,
+      "price": 109871.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761873192.01073,
+      "price": 109937.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761873305.474174,
+      "price": 109884.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761873575.168665,
+      "price": 109953.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761874409.255044,
+      "price": 109874.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761874553.192354,
+      "price": 109565.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1761875085.099922,
+      "price": 109605.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761875465.057582,
+      "price": 109735.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761884705.6212,
+      "price": 109538.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761885295.010353,
+      "price": 109809.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761885729.193188,
+      "price": 109808.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761885860.632496,
+      "price": 110230.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761886204.460429,
+      "price": 110132.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761886782.271865,
+      "price": 110064.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761923507.436363,
+      "price": 110473.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761923647.570732,
+      "price": 111084.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761924142.048772,
+      "price": 110754.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761924217.148908,
+      "price": 110770.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761924424.931033,
+      "price": 110591.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761924556.056826,
+      "price": 110439.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761924563.135319,
+      "price": 110481.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761940196.705951,
+      "price": 110197.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761941379.01598,
+      "price": 109606.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761943692.678167,
+      "price": 109512.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761943939.204867,
+      "price": 109748.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761955608.1846,
+      "price": 109485.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1761960499.071792,
+      "price": 109722.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762006488.022544,
+      "price": 109821.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762007998.875206,
+      "price": 109891.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762013198.632928,
+      "price": 110349.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762013560.773903,
+      "price": 110463.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762070140.61784,
+      "price": 110884.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762070268.082373,
+      "price": 111024.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762070813.851143,
+      "price": 110891.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762070923.630574,
+      "price": 110811.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1762085567.025749,
+      "price": 111124.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762085714.551761,
+      "price": 111112.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1762085829.082065,
+      "price": 111112.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762089922.81499,
+      "price": 110362.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762090075.051145,
+      "price": 110300.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1762090189.533138,
+      "price": 110300.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762124055.41805,
+      "price": 109675.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762131932.264245,
+      "price": 109490.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1762137108.276195,
+      "price": 109244.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762139625.406373,
+      "price": 108666.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762139723.963477,
+      "price": 108235.0,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1762140405.467862,
+      "price": 108274.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762140666.932621,
+      "price": 108087.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762141134.224134,
+      "price": 108204.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762141727.776688,
+      "price": 108200.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762141865.854638,
+      "price": 108071.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762142420.792141,
+      "price": 107929.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762142535.019463,
+      "price": 107919.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762142563.267819,
+      "price": 107971.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762142877.414346,
+      "price": 107548.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762142976.998946,
+      "price": 107652.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1762143143.387526,
+      "price": 107631.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762152314.645726,
+      "price": 107385.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762152650.226815,
+      "price": 107126.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762152692.490714,
+      "price": 107015.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762152776.207456,
+      "price": 107039.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762152812.494344,
+      "price": 107426.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762153285.280591,
+      "price": 107353.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762153826.718576,
+      "price": 107273.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762157936.578436,
+      "price": 107468.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762158853.316748,
+      "price": 107312.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762167700.754647,
+      "price": 107121.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762167816.918317,
+      "price": 106738.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762167956.069472,
+      "price": 107185.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762183479.479233,
+      "price": 107403.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762183591.033369,
+      "price": 107335.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762183726.754418,
+      "price": 107101.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762183762.586449,
+      "price": 107109.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762183849.976231,
+      "price": 106427.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762183916.025624,
+      "price": 106546.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762183960.778566,
+      "price": 105813.5,
+      "source": "positions_after"
+    },
+    {
+      "timestamp": 1762184064.981625,
+      "price": 105693.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184076.057374,
+      "price": 105938.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184129.493029,
+      "price": 105846.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184185.893668,
+      "price": 106470.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184317.141407,
+      "price": 105961.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184371.766572,
+      "price": 106121.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184440.516669,
+      "price": 105771.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184507.729984,
+      "price": 106248.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184516.906354,
+      "price": 105859.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184606.685283,
+      "price": 106296.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184606.852924,
+      "price": 106244.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762184789.437466,
+      "price": 106363.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762185110.264458,
+      "price": 105840.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762185507.109317,
+      "price": 105893.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762185866.854275,
+      "price": 105672.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762185894.248901,
+      "price": 105685.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762185951.046278,
+      "price": 105597.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762186391.675356,
+      "price": 105374.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762186932.748946,
+      "price": 105793.0,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762186977.80447,
+      "price": 105913.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762187052.242105,
+      "price": 106153.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762190555.151344,
+      "price": 106982.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762191383.193597,
+      "price": 107153.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762193609.324558,
+      "price": 107311.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762193967.064528,
+      "price": 107169.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762195472.595157,
+      "price": 107291.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762197026.593958,
+      "price": 106615.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762200273.895466,
+      "price": 107095.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762200951.648228,
+      "price": 106815.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762202046.194422,
+      "price": 106715.5,
+      "source": "positions_before"
+    },
+    {
+      "timestamp": 1762202201.78469,
+      "price": 106720.5,
+      "source": "positions_before"
+    }
+  ],
+  "daily_candles": [
+    {
+      "date": "2025-10-23",
+      "timestamp": 1761148800.0,
+      "open": 109412.5,
+      "high": 110079.5,
+      "low": 109412.5,
+      "close": 109908.5,
+      "count": 10
+    },
+    {
+      "date": "2025-10-24",
+      "timestamp": 1761235200.0,
+      "open": 110539.5,
+      "high": 111599.5,
+      "low": 109524.5,
+      "close": 110418.5,
+      "count": 64
+    },
+    {
+      "date": "2025-10-25",
+      "timestamp": 1761321600.0,
+      "open": 109960.5,
+      "high": 111769.5,
+      "low": 109865.5,
+      "close": 111529.5,
+      "count": 36
+    },
+    {
+      "date": "2025-10-26",
+      "timestamp": 1761408000.0,
+      "open": 111475.5,
+      "high": 113859.5,
+      "low": 111274.5,
+      "close": 113859.5,
+      "count": 45
+    },
+    {
+      "date": "2025-10-27",
+      "timestamp": 1761494400.0,
+      "open": 113759.5,
+      "high": 115841.5,
+      "low": 113759.5,
+      "close": 115278.5,
+      "count": 28
+    },
+    {
+      "date": "2025-10-28",
+      "timestamp": 1761580800.0,
+      "open": 115541.5,
+      "high": 115585.5,
+      "low": 113633.5,
+      "close": 114713.0,
+      "count": 30
+    },
+    {
+      "date": "2025-10-29",
+      "timestamp": 1761667200.0,
+      "open": 115018.5,
+      "high": 115018.5,
+      "low": 111619.5,
+      "close": 111619.5,
+      "count": 57
+    },
+    {
+      "date": "2025-10-30",
+      "timestamp": 1761753600.0,
+      "open": 111400.5,
+      "high": 111853.5,
+      "low": 107459.5,
+      "close": 108370.5,
+      "count": 95
+    },
+    {
+      "date": "2025-10-31",
+      "timestamp": 1761840000.0,
+      "open": 107626.5,
+      "high": 111084.5,
+      "low": 106491.5,
+      "close": 110481.5,
+      "count": 68
+    },
+    {
+      "date": "2025-11-01",
+      "timestamp": 1761926400.0,
+      "open": 110197.5,
+      "high": 110197.5,
+      "low": 109485.5,
+      "close": 109891.5,
+      "count": 8
+    },
+    {
+      "date": "2025-11-02",
+      "timestamp": 1762012800.0,
+      "open": 110349.5,
+      "high": 111124.5,
+      "low": 110300.5,
+      "close": 110300.5,
+      "count": 12
+    },
+    {
+      "date": "2025-11-03",
+      "timestamp": 1762099200.0,
+      "open": 109675.5,
+      "high": 109675.5,
+      "low": 105693.0,
+      "close": 105893.5,
+      "count": 49
+    },
+    {
+      "date": "2025-11-04",
+      "timestamp": 1762185600.0,
+      "open": 105672.5,
+      "high": 107311.5,
+      "low": 105374.0,
+      "close": 106720.5,
+      "count": 17
+    }
+  ]
+}

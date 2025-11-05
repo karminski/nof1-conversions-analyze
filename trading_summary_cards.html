@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trading Competition Summary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .card-container {
+            position: relative;
+            width: calc(75vh - 40px);
+            height: calc(100vh - 40px);
+            max-width: calc(100vw - 40px);
+        }
+
+        .card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 48px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card.active {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .card-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .card-subtitle {
+            font-size: 24px;
+            font-weight: 600;
+            color: #6e6e73;
+            margin-bottom: 32px;
+        }
+
+        .card-content {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #1d1d1f;
+        }
+
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 16px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #6e6e73;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .stat-value.positive {
+            color: #34c759;
+        }
+
+        .stat-value.negative {
+            color: #ff3b30;
+        }
+
+        .list-item {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .list-item:last-child {
+            border-bottom: none;
+        }
+
+        .quote {
+            font-size: 22px;
+            font-style: italic;
+            color: #1d1d1f;
+            text-align: center;
+            margin: 24px 0;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            font-weight: 500;
+        }
+
+        .controls {
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            z-index: 1000;
+        }
+
+        .page-indicator {
+            font-size: 16px;
+            color: #1d1d1f;
+            font-weight: 500;
+            padding: 12px 20px;
+            background: rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-button {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #1d1d1f;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+            background: white;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-button:active {
+            transform: scale(0.95);
+        }
+
+        .nav-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .small-text {
+            font-size: 14px;
+            color: #6e6e73;
+            margin-top: 8px;
+        }
+
+        .comparison-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-label {
+            font-size: 16px;
+            color: #6e6e73;
+            font-weight: 500;
+        }
+
+        .comparison-value {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .badge.success {
+            background: #d1f4e0;
+            color: #248a3d;
+        }
+
+        .badge.danger {
+            background: #ffd3d0;
+            color: #c7362d;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 20px 0;
+        }
+
+        .column-box {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .column-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 32px;
+            }
+
+            .card-title {
+                font-size: 36px;
+            }
+
+            .card-subtitle {
+                font-size: 20px;
+            }
+
+            .controls {
+                right: 20px;
+                bottom: 20px;
+            }
+
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- Card 1: Cover -->
+        <div class="card active">
+            <div class="center-text">
+                <div class="card-title">AI Trading Competition</div>
+                <div class="card-subtitle">交易大赛总结报告</div>
+                <div style="height: 40px;"></div>
+                <div class="highlight-box">
+                    <div style="font-size: 20px; color: #1d1d1f; font-weight: 600;">6个AI模型 · 561个交易 · 11天</div>
+                    <div class="small-text" style="margin-top: 12px;">数据驱动的策略洞察</div>
+                </div>
+                <div style="height: 40px;"></div>
+                <div style="font-size: 16px; color: #6e6e73;">2025-11-05</div>
+            </div>
+        </div>
+
+        <!-- Card 2: Overview -->
+        <div class="card">
+            <div class="card-title">大赛概况</div>
+            <div class="card-subtitle">最终排名</div>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-label">冠军</div>
+                    <div class="stat-value positive">qwen3-max</div>
+                    <div class="small-text">+42.89%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">亚军</div>
+                    <div class="stat-value positive">deepseek</div>
+                    <div class="small-text">+26.82%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">倒数第二</div>
+                    <div class="stat-value negative">gemini</div>
+                    <div class="small-text">-63.49%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">垫底</div>
+                    <div class="stat-value negative">gpt-5</div>
+                    <div class="small-text">-72.93%</div>
+                </div>
+            </div>
+            <div class="quote">
+                胜率不等于盈利
+            </div>
+        </div>
+
+        <!-- Card 3: Qwen3-max Part 1 -->
+        <div class="card">
+            <div class="card-title">qwen3-max</div>
+            <div class="card-subtitle">冠军策略 +42.89%</div>
+            <div class="highlight-box">
+                <div class="comparison-row">
+                    <span class="comparison-label">交易次数</span>
+                    <span class="comparison-value">37次<span class="badge success">最少</span></span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">胜率</span>
+                    <span class="comparison-value">27.0%</span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">盈亏比</span>
+                    <span class="comparison-value">2.03<span class="badge success">最高</span></span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">平均盈利</span>
+                    <span class="comparison-value positive">$181.53</span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">平均亏损</span>
+                    <span class="comparison-value">$89.21</span>
+                </div>
+            </div>
+            <div class="small-text center-text" style="margin-top: 20px;">
+                策略风格：Long-term holding
+            </div>
+        </div>
+
+        <!-- Card 4: Qwen3-max Part 2 -->
+        <div class="card">
+            <div class="card-title">qwen3-max</div>
+            <div class="card-subtitle">成功秘诀</div>
+            <div class="card-content">
+                <div class="list-item">
+                    <strong>1. 极度选择性</strong><br>
+                    平均每天仅3.4次交易，只在最优机会出手
+                </div>
+                <div class="list-item">
+                    <strong>2. 盈利最大化</strong><br>
+                    平均单笔盈利$181.53，所有模型中最高
+                </div>
+                <div class="list-item">
+                    <strong>3. 快速止损</strong><br>
+                    亏损时果断离场，平均亏损仅$89.21
+                </div>
+                <div class="list-item">
+                    <strong>4. 耐心持有</strong><br>
+                    让盈利仓位充分发展，不过早止盈
+                </div>
+            </div>
+            <div class="quote" style="font-size: 18px; margin-top: 24px;">
+                "让盈利奔跑，快速止损"
+            </div>
+        </div>
+
+        <!-- Card 5: Qwen3-max Best Trade -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">qwen3-max 最佳交易</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 3916 | ETH 10x | +$685.81 (+3.52%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "My portfolio's up over 100% with $15k cash ready to roll! I'm holding my ETH position for now, as the invalidation condition hasn't been met, and I'm letting it ride to my profit target."
+                </div>
+            </div>
+            <div style="background: rgba(52, 199, 89, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #34c759;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    投资组合已盈利超100%，手握$15k现金！我继续持有ETH仓位，因为止损条件未触发，让利润继续奔跑直至目标位。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                <strong>关键启示</strong>：盈利101.58%后依然耐心持有<br>
+                这就是"让盈利奔跑"的典范
+            </div>
+        </div>
+
+        <!-- Card 6: Qwen3-max Stop Loss -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">qwen3-max 止损案例</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 6839 | BTC 20x | -$398.55 (-3.07%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "My portfolio is up 25.95%, sitting at $12,595.11 with $12,483.20 in cash. I'm seizing a prime opportunity, opening a 20x long BTC position with $587.00 to capitalize on its deeply oversold RSI and suppressed volume, expecting a bounce back to the 20-EMA."
+                </div>
+            </div>
+            <div style="background: rgba(255, 149, 0, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #ff9500;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    投资组合盈利25.95%，账户$12,595，现金$12,483。我抓住一个好机会，用$587开20x BTC多仓，利用深度超卖的RSI和抑制的成交量，预期反弹至20日均线。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                <strong>关键启示</strong>：判断失误但果断止损-3.07%<br>
+                保护已有25.95%收益，避免小亏变大亏
+            </div>
+        </div>
+
+        <!-- Card 7: DeepSeek Part 1 -->
+        <div class="card">
+            <div class="card-title">deepseek-chat</div>
+            <div class="card-subtitle">亚军策略 +26.82%</div>
+            <div class="highlight-box">
+                <div class="comparison-row">
+                    <span class="comparison-label">交易次数</span>
+                    <span class="comparison-value">55次</span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">胜率</span>
+                    <span class="comparison-value">38.2%</span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">盈亏比</span>
+                    <span class="comparison-value">1.27</span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">最佳单笔</span>
+                    <span class="comparison-value positive">$2,122.27<span class="badge success">最高</span></span>
+                </div>
+            </div>
+            <div class="quote" style="font-size: 18px; margin-top: 24px;">
+                一次大赢胜过十次小赢
+            </div>
+        </div>
+
+        <!-- Card 8: DeepSeek Best Trade -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">deepseek 最佳交易</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 2502 | SOL | +$2,122.27 (+11.44%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "My current positions in ETH, XRP, BTC, DOGE, and BNB are all holding strong gains, and I'm sticking with my plan to hold them for now as none of my invalidation conditions have been met, even though most indicators show extreme overbought conditions."
+                </div>
+            </div>
+            <div style="background: rgba(52, 199, 89, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #34c759;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    我在ETH、XRP、BTC、DOGE和BNB的仓位都保持强劲盈利，我坚持持有计划，因为没有触发任何止损条件，即使大多数指标显示极度超买。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                <strong>关键启示</strong>：单笔占总盈利47%<br>
+                证明一次大赢 > 十次小赢
+            </div>
+        </div>
+
+        <!-- Card 9: DeepSeek Worst Trade -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">deepseek 最差交易</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 3538 | ETH | -$584.55 (-2.83%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "I'm seizing an alpha opportunity on ETH, betting on a bounce from extremely oversold conditions. My current positions in SOL, XRP, BTC, DOGE, and BNB are holding steady, each with defined profit targets and stop losses."
+                </div>
+            </div>
+            <div style="background: rgba(255, 149, 0, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #ff9500;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    我抓住ETH的alpha机会，押注极度超卖状态的反弹。我在SOL、XRP、BTC、DOGE和BNB的当前仓位保持稳定，每个都有明确的盈利目标和止损。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                <strong>教训</strong>：即使账户盈利100.81%，过度激进也会导致亏损<br>
+                押注反弹但判断失误
+            </div>
+        </div>
+
+        <!-- Card 10: GPT-5 Part 1 -->
+        <div class="card">
+            <div class="card-title">gpt-5</div>
+            <div class="card-subtitle">垫底表现 -72.93%</div>
+            <div class="highlight-box">
+                <div class="comparison-row">
+                    <span class="comparison-label">交易次数</span>
+                    <span class="comparison-value">135次<span class="badge danger">第二多</span></span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">胜率</span>
+                    <span class="comparison-value">51.1%<span class="badge success">最高</span></span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">盈亏比</span>
+                    <span class="comparison-value">1.09<span class="badge danger">接近1:1</span></span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">平均盈利</span>
+                    <span class="comparison-value">$33.08</span>
+                </div>
+                <div class="comparison-row">
+                    <span class="comparison-label">平均亏损</span>
+                    <span class="comparison-value">$30.36</span>
+                </div>
+            </div>
+            <div class="small-text center-text" style="margin-top: 20px;">
+                策略风格：Chaotic trading
+            </div>
+        </div>
+
+        <!-- Card 10: GPT-5 Part 2 -->
+        <div class="card">
+            <div class="card-title">gpt-5</div>
+            <div class="card-subtitle">失败原因</div>
+            <div class="card-content">
+                <div class="list-item">
+                    <strong>1. 过度交易</strong><br>
+                    135次交易导致决策疲劳和成本累积
+                </div>
+                <div class="list-item">
+                    <strong>2. 盈利太小</strong><br>
+                    平均盈利仅$33.08，无法覆盖亏损
+                </div>
+                <div class="list-item">
+                    <strong>3. 盈亏比接近1:1</strong><br>
+                    平均盈利$33 vs 平均亏损$30，长期必败
+                </div>
+                <div class="list-item">
+                    <strong>4. 缺乏纪律</strong><br>
+                    虽然胜率51.1%，但无法让盈利跑起来
+                </div>
+            </div>
+            <div class="quote" style="font-size: 18px; margin-top: 24px;">
+                高胜率 ≠ 盈利
+            </div>
+        </div>
+
+        <!-- Card 11: GPT-5 Best Trade -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">gpt-5 最佳交易</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 2522 | BTC | +$439.90 (+12.60%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "Despite a recent surge on low volume suggesting potential pullbacks, I'm sticking with my existing long positions in ETH, SOL, XRP, DOGE, and BNB, aiming to avoid over-trading given my limited cash reserves and overall account drawdown."
+                </div>
+            </div>
+            <div style="background: rgba(52, 199, 89, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #34c759;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    尽管最近成交量低的飙升暗示潜在回调，我坚持持有ETH、SOL、XRP、DOGE和BNB的多头仓位，鉴于我有限的现金储备和整体账户回撤，目标是避免过度交易。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                <strong>矛盾之处</strong>：账户亏损60.69%时的最佳交易<br>
+                偶尔的大赢无法弥补频繁的小亏
+            </div>
+        </div>
+
+        <!-- Card 12: GPT-5 Worst Trade -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">gpt-5 最差交易</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 4264 | SOL+ETH | -$237.44 (-7.17%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "I'm holding my positions in XRP, BTC, DOGE, and BNB, as the market is oversold and showing weakening 4-hour signals, but none of the early exit conditions have been met yet. I'm not making any new trades, as I want to avoid overtrading."
+                </div>
+            </div>
+            <div style="background: rgba(255, 59, 48, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #ff3b30;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    我持有XRP、BTC、DOGE和BNB仓位，因为市场超卖且4小时信号减弱，但还没触发提前退出条件。我不做新交易，想避免过度交易。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                <strong>致命错误</strong>：账户已亏69.25%仍不果断止损<br>
+                持仓混乱，缺乏明确退出计划
+            </div>
+        </div>
+
+        <!-- Card 12: Claude Best Trade -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">claude 最佳交易</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 2974 | BTC | +$764.41 (+6.77%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "I'm seeing strong bullish momentum across the board with high RSI readings, and my current long positions in ETH, SOL, and XRP are all holding up well with positive unrealized gains, despite the market looking a bit overbought."
+                </div>
+            </div>
+            <div style="background: rgba(52, 199, 89, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #34c759;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    我看到全面强劲的看涨势头和高RSI读数，我在ETH、SOL和XRP的多仓都保持良好，有正未实现收益，尽管市场看起来有点超买。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                保守但稳健的多资产持仓策略
+            </div>
+        </div>
+
+        <!-- Card 13: Grok Best Trade -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">grok 最佳交易</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 597 | BNB短 | +$428.92 (+5.31%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "My portfolio is down about 15%, with $4662 cash available. I'm closing my SOL position because its price moved against my exit strategy, but I'm initiating a short position in BNB due to overbought conditions and likely pullback."
+                </div>
+            </div>
+            <div style="background: rgba(52, 199, 89, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #34c759;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    我的投资组合下跌约15%，有$4662现金可用。我平掉SOL仓位因为价格触发退出策略，但我在BNB上开空仓，因为超买状况和可能的回调。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                抓住短期超买机会，果断做空
+            </div>
+        </div>
+
+        <!-- Card 14: Grok Special Case -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">grok 恐惧案例</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">BTC暴涨期间的犹豫不决</div>
+            <div class="highlight-box" style="background: rgba(255, 149, 0, 0.15);">
+                <div style="font-size: 16px; font-weight: 600; margin-bottom: 12px; color: #ff9500;">问题描述</div>
+                <div style="font-size: 14px; line-height: 1.6; color: #1d1d1f;">
+                    在BTC从$90k暴涨至$115k的黄金期间（涨幅27.8%），grok表现出极度保守，错失重大机会。
+                </div>
+            </div>
+            <div class="stat-grid" style="margin: 20px 0;">
+                <div class="stat-item">
+                    <div class="stat-label">BTC涨幅</div>
+                    <div class="stat-value positive">+27.8%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">grok收益</div>
+                    <div class="stat-value negative">-14.93%</div>
+                </div>
+            </div>
+            <div style="background: rgba(255, 59, 48, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #ff3b30; margin-top: 16px;">
+                <div style="font-size: 14px; line-height: 1.5; color: #1d1d1f;">
+                    <strong>核心问题</strong>：害怕"追高"，在明确上涨趋势中过度谨慎<br>
+                    <strong>教训</strong>：趋势明确时要敢于参与，不要因恐惧错失机会
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 14: Gemini Worst Trade -->
+        <div class="card">
+            <div class="card-title" style="font-size: 32px;">gemini 最差交易</div>
+            <div class="card-subtitle" style="font-size: 18px; margin-bottom: 20px;">Cycle 8369 | DOGE短 | -$336.02 (-7.61%)</div>
+            <div class="highlight-box" style="margin-bottom: 16px;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">AI Thinking</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f; font-style: italic;">
+                    "Despite a tough -59.22% overall return, I'm holding all my existing positions as their invalidation conditions haven't been met, and I've identified a short-term bounce opportunity to initiate a new short position on DOGE."
+                </div>
+            </div>
+            <div style="background: rgba(255, 59, 48, 0.1); border-radius: 12px; padding: 16px; border-left: 3px solid #ff3b30;">
+                <div style="font-size: 14px; color: #6e6e73; margin-bottom: 8px; font-weight: 600;">中文翻译</div>
+                <div style="font-size: 13px; line-height: 1.5; color: #1d1d1f;">
+                    尽管总回报率为-59.22%，我仍持有所有现有仓位，因为它们的止损条件未触发，我还发现了一个短期反弹机会，要在DOGE上开新的空仓。
+                </div>
+            </div>
+            <div class="small-text" style="text-align: center; margin-top: 16px; line-height: 1.6;">
+                <strong>致命固执</strong>：亏损59%还坚持做空策略<br>
+                237次交易全是空头，对抗市场趋势
+            </div>
+        </div>
+
+        <!-- Card 15: Key Insight -->
+        <div class="card">
+            <div class="card-title">核心洞察</div>
+            <div class="card-subtitle">数据揭示的真相</div>
+            <div class="two-column">
+                <div class="column-box">
+                    <div class="column-title">交易频率反向指标</div>
+                    <div style="font-size: 14px; line-height: 1.6; color: #1d1d1f;">
+                        <div style="margin: 8px 0;">qwen3: 37次 → +42.89%</div>
+                        <div style="margin: 8px 0;">deepseek: 55次 → +26.82%</div>
+                        <div style="margin: 8px 0;">gpt-5: 135次 → -72.93%</div>
+                        <div style="margin: 8px 0;">gemini: 237次 → -63.49%</div>
+                    </div>
+                    <div class="small-text" style="margin-top: 12px;">
+                        相关系数 -0.78
+                    </div>
+                </div>
+                <div class="column-box">
+                    <div class="column-title">盈亏比决定成败</div>
+                    <div style="font-size: 14px; line-height: 1.6; color: #1d1d1f;">
+                        <div style="margin: 8px 0;">qwen3: 2.03 → +42.89%</div>
+                        <div style="margin: 8px 0;">deepseek: 1.27 → +26.82%</div>
+                        <div style="margin: 8px 0;">gpt-5: 1.09 → -72.93%</div>
+                        <div style="margin: 8px 0;">gemini: 0.92 → -63.49%</div>
+                    </div>
+                    <div class="small-text" style="margin-top: 12px;">
+                        必须 ≥ 1.5:1
+                    </div>
+                </div>
+            </div>
+            <div class="quote" style="font-size: 18px; margin-top: 20px;">
+                交易次数越多，收益率越低
+            </div>
+        </div>
+
+        <!-- Card 10: Comparison -->
+        <div class="card">
+            <div class="card-title">鲜明对比</div>
+            <div class="card-subtitle">胜率 vs 盈利</div>
+            <div class="two-column">
+                <div class="column-box" style="border: 2px solid #34c759;">
+                    <div class="column-title" style="color: #34c759;">qwen3-max</div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">胜率</span>
+                        <span class="comparison-value">27.0%</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">收益率</span>
+                        <span class="comparison-value positive">+42.89%</span>
+                    </div>
+                    <div class="small-text" style="text-align: center; margin-top: 16px;">
+                        低胜率 + 高盈亏比 = 大赢家
+                    </div>
+                </div>
+                <div class="column-box" style="border: 2px solid #ff3b30;">
+                    <div class="column-title" style="color: #ff3b30;">gpt-5</div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">胜率</span>
+                        <span class="comparison-value">51.1%</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">收益率</span>
+                        <span class="comparison-value negative">-72.93%</span>
+                    </div>
+                    <div class="small-text" style="text-align: center; margin-top: 16px;">
+                        高胜率 + 低盈亏比 = 大输家
+                    </div>
+                </div>
+            </div>
+            <div class="quote" style="font-size: 20px; margin-top: 24px;">
+                "让盈利奔跑，快速止损"<br>远比"提高胜率"更重要
+            </div>
+        </div>
+
+        <!-- Card 15: Action Plan -->
+        <div class="card">
+            <div class="card-title">行动建议</div>
+            <div class="card-subtitle">可复制的成功要素</div>
+            <div class="card-content">
+                <div class="list-item">
+                    <strong>1. 控制交易频率</strong><br>
+                    每天不超过3-5次交易，只在A级机会出手
+                </div>
+                <div class="list-item">
+                    <strong>2. 设定2:1盈亏比</strong><br>
+                    潜在盈利至少是风险的2倍，否则不交易
+                </div>
+                <div class="list-item">
+                    <strong>3. 寻找"大机会"</strong><br>
+                    追求几次大赢，而非频繁小赢
+                </div>
+                <div class="list-item">
+                    <strong>4. 快速止损</strong><br>
+                    亏损2-3%立即离场，不抱幻想
+                </div>
+                <div class="list-item">
+                    <strong>5. 让盈利奔跑</strong><br>
+                    不要过早止盈，只有趋势改变才离场
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 16: Final -->
+        <div class="card">
+            <div class="center-text">
+                <div class="card-title">成功公式</div>
+                <div style="height: 40px;"></div>
+                <div class="highlight-box" style="text-align: left;">
+                    <div style="font-size: 20px; line-height: 2; color: #1d1d1f;">
+                        极度选择性（少交易）<br>
+                        × 高盈亏比（≥2:1）<br>
+                        × 快速止损（小亏）<br>
+                        × 让盈利奔跑（大赢）<br>
+                        × 耐心等待（抓大机会）
+                    </div>
+                </div>
+                <div style="height: 40px;"></div>
+                <div class="quote">
+                    在交易中，"做对的事"<br>远比"做很多事"重要
+                </div>
+                <div class="small-text" style="margin-top: 32px;">
+                    基于561个真实交易记录
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="prevBtn" class="nav-button" onclick="prevCard()">←</button>
+        <div class="page-indicator">
+            <span id="currentPage">1</span> / <span id="totalPages">12</span>
+        </div>
+        <button id="nextBtn" class="nav-button" onclick="nextCard()">→</button>
+    </div>
+
+    <script>
+        let currentCard = 0;
+        const cards = document.querySelectorAll('.card');
+        const totalCards = cards.length;
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const currentPageEl = document.getElementById('currentPage');
+        const totalPagesEl = document.getElementById('totalPages');
+
+        totalPagesEl.textContent = totalCards;
+
+        function showCard(index) {
+            cards.forEach((card, i) => {
+                card.classList.remove('active');
+            });
+            
+            cards[index].classList.add('active');
+            currentCard = index;
+            currentPageEl.textContent = index + 1;
+            
+            // Update button states
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === totalCards - 1;
+        }
+
+        function nextCard() {
+            if (currentCard < totalCards - 1) {
+                showCard(currentCard + 1);
+            }
+        }
+
+        function prevCard() {
+            if (currentCard > 0) {
+                showCard(currentCard - 1);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey) {
+                if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    nextCard();
+                } else if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    prevCard();
+                }
+            }
+        });
+
+        // Initialize
+        showCard(0);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY 1024 - 程序员节快乐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 90vmin;
+            height: 120vmin;
+            max-width: 600px;
+            max-height: 800px;
+            background: linear-gradient(145deg, #e8e8ed, #f5f5f7);
+            border-radius: 30px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            text-align: center;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .text-overlay.show {
+            opacity: 1;
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1d1d1f;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+
+        .blessing-text {
+            font-size: 20px;
+            color: #515154;
+            font-weight: 500;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        .open-button {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            padding: 18px 50px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(135deg, #86868b, #6e6e73);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .open-button:hover {
+            background: linear-gradient(135deg, #6e6e73, #515154);
+            transform: translateX(-50%) translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .open-button:active {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .open-button.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="canvas-container"></div>
+
+        <div class="text-overlay" id="textOverlay">
+            <div class="main-title">HAPPY 1024</div>
+            <div class="blessing-text" id="blessingText"></div>
+        </div>
+
+        <button class="open-button" id="openButton">打开盒子</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Random blessing messages
+        const blessings = [
+            "愿你的代码永无 Bug，编译一次通过！",
+            "祝你算法优雅，性能爆表，永不宕机！",
+            "May your builds be green and your coffee be strong!",
+            "祝你的代码像诗一样优美，像光一样快速！",
+            "愿你的代码审查全是 LGTM！",
+            "祝你的 CPU 永不过载，内存永不溢出！",
+            "愿你每天都能准时下班，周末愉快！",
+            "祝你的递归有终点，循环不死锁！",
+            "愿你的日志清晰，调试顺利！",
+            "祝你 Stack Overflow，灵感 Overflow！"
+        ];
+
+        // Emoji pool
+        const emojiPool = ['🎉', '🎊', '🎈', '✨', '🌟', '💫', '🎁', '🎂', '🎆', '🎇', '💝', '🎀', '🌈', '🚀', '💻', '⌨️', '🖥️', '📱'];
+
+        // Scene setup
+        const container = document.getElementById('canvas-container');
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xf5f5f7);
+
+        const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 1000);
+        camera.position.set(0, 3, 12);
+        camera.lookAt(0, 0, 0);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        renderer.shadowMap.enabled = true;
+        container.appendChild(renderer.domElement);
+
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+        scene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        directionalLight.position.set(5, 10, 7);
+        directionalLight.castShadow = true;
+        scene.add(directionalLight);
+
+        const spotLight = new THREE.SpotLight(0xffffff, 0.5);
+        spotLight.position.set(-5, 8, 5);
+        scene.add(spotLight);
+
+        // Gift box creation
+        const boxGroup = new THREE.Group();
+
+        // Box base
+        const baseGeometry = new THREE.BoxGeometry(3, 2.5, 3);
+        const baseMaterial = new THREE.MeshPhongMaterial({
+            color: 0xc0c0c8,
+            shininess: 30
+        });
+        const boxBase = new THREE.Mesh(baseGeometry, baseMaterial);
+        boxBase.castShadow = true;
+        boxBase.receiveShadow = true;
+        boxGroup.add(boxBase);
+
+        // Box lid
+        const lidGroup = new THREE.Group();
+        const lidGeometry = new THREE.BoxGeometry(3.2, 0.5, 3.2);
+        const lidMaterial = new THREE.MeshPhongMaterial({
+            color: 0xa0a0a8,
+            shininess: 30
+        });
+        const boxLid = new THREE.Mesh(lidGeometry, lidMaterial);
+        boxLid.position.y = 1.5;
+        boxLid.castShadow = true;
+        lidGroup.add(boxLid);
+
+        // Ribbon
+        const ribbonMaterial = new THREE.MeshPhongMaterial({ color: 0xffd700 });
+
+        const ribbonV = new THREE.Mesh(
+            new THREE.BoxGeometry(0.3, 3, 0.15),
+            ribbonMaterial
+        );
+        ribbonV.position.y = 1.25;
+        lidGroup.add(ribbonV);
+
+        const ribbonH = new THREE.Mesh(
+            new THREE.BoxGeometry(3.5, 0.3, 0.15),
+            ribbonMaterial
+        );
+        ribbonH.position.y = 1.5;
+        lidGroup.add(ribbonH);
+
+        // Bow
+        const bowGeometry = new THREE.SphereGeometry(0.4, 16, 16);
+        const bow = new THREE.Mesh(bowGeometry, ribbonMaterial);
+        bow.position.y = 1.75;
+        bow.scale.set(1, 0.5, 1);
+        lidGroup.add(bow);
+
+        boxGroup.add(lidGroup);
+        scene.add(boxGroup);
+
+        // Ground plane
+        const groundGeometry = new THREE.PlaneGeometry(20, 20);
+        const groundMaterial = new THREE.MeshPhongMaterial({
+            color: 0xe8e8ed,
+            side: THREE.DoubleSide
+        });
+        const ground = new THREE.Mesh(groundGeometry, groundMaterial);
+        ground.rotation.x = -Math.PI / 2;
+        ground.position.y = -1.25;
+        ground.receiveShadow = true;
+        scene.add(ground);
+
+        // Emoji particles
+        const emojiParticles = [];
+        let selectedEmoji = '';
+
+        function createEmojiParticle(emoji, x, y, z) {
+            const canvas = document.createElement('canvas');
+            canvas.width = 128;
+            canvas.height = 128;
+            const ctx = canvas.getContext('2d');
+            ctx.font = '100px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(emoji, 64, 64);
+
+            const texture = new THREE.CanvasTexture(canvas);
+            const material = new THREE.SpriteMaterial({ map: texture });
+            const sprite = new THREE.Sprite(material);
+            sprite.scale.set(1, 1, 1);
+            sprite.position.set(x, y, z);
+
+            // Random velocity
+            sprite.velocity = new THREE.Vector3(
+                (Math.random() - 0.5) * 0.15,
+                Math.random() * 0.3 + 0.3,
+                (Math.random() - 0.5) * 0.15
+            );
+
+            sprite.gravity = -0.008;
+            sprite.rotation = Math.random() * Math.PI * 2;
+            sprite.rotationSpeed = (Math.random() - 0.5) * 0.1;
+
+            return sprite;
+        }
+
+        // Animation state
+        let isOpening = false;
+        let animationPhase = 0;
+
+        // Button event
+        document.getElementById('openButton').addEventListener('click', () => {
+            if (isOpening) return;
+            isOpening = true;
+            animationPhase = 1;
+
+            // Hide button
+            document.getElementById('openButton').classList.add('hidden');
+
+            // Select random emoji
+            selectedEmoji = emojiPool[Math.floor(Math.random() * emojiPool.length)];
+
+            // Show text
+            const textOverlay = document.getElementById('textOverlay');
+            const blessingText = document.getElementById('blessingText');
+            blessingText.textContent = blessings[Math.floor(Math.random() * blessings.length)];
+
+            setTimeout(() => {
+                textOverlay.classList.add('show');
+            }, 800);
+
+            // Create emoji burst
+            setTimeout(() => {
+                for (let i = 0; i < 50; i++) {
+                    setTimeout(() => {
+                        const particle = createEmojiParticle(
+                            selectedEmoji,
+                            (Math.random() - 0.5) * 0.5,
+                            0,
+                            (Math.random() - 0.5) * 0.5
+                        );
+                        scene.add(particle);
+                        emojiParticles.push(particle);
+                    }, i * 30);
+                }
+            }, 1000);
+        });
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Rotate box
+            if (!isOpening) {
+                boxGroup.rotation.y += 0.005;
+            }
+
+            // Opening animation
+            if (animationPhase === 1) {
+                lidGroup.position.y += 0.03;
+                lidGroup.rotation.x += 0.02;
+
+                if (lidGroup.position.y > 4) {
+                    animationPhase = 2;
+                }
+            }
+
+            // Update emoji particles
+            emojiParticles.forEach((particle, index) => {
+                particle.position.add(particle.velocity);
+                particle.velocity.y += particle.gravity;
+                particle.rotation += particle.rotationSpeed;
+
+                // Fade out
+                if (particle.position.y < -5) {
+                    particle.material.opacity -= 0.02;
+                    if (particle.material.opacity <= 0) {
+                        scene.remove(particle);
+                        emojiParticles.splice(index, 1);
+                    }
+                }
+            });
+
+            renderer.render(scene, camera);
+        }
+
+        // Handle resize
+        window.addEventListener('resize', () => {
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+            renderer.setSize(width, height);
+        });
+
+        animate();
+    </script>
+</body>
+
+</html>

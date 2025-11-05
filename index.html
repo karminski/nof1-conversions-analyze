@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trading Competition Analysis | NOF1 Conversions Analyze</title>
+    <meta name="description" content="深度分析6个AI模型的加密货币交易策略，揭示成功与失败的关键因素">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
+            color: #1d1d1f;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
+        }
+
+        .hero-title {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 28px;
+            font-weight: 600;
+            color: #6e6e73;
+            margin-bottom: 16px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            color: #86868b;
+            max-width: 800px;
+            margin: 0 auto 48px;
+            line-height: 1.8;
+        }
+
+        .stats-container {
+            display: flex;
+            gap: 48px;
+            margin-bottom: 64px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #6e6e73;
+            font-weight: 500;
+        }
+
+        /* Navigation Cards Section */
+        .nav-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-description {
+            font-size: 18px;
+            color: #6e6e73;
+            text-align: center;
+            margin-bottom: 64px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 32px;
+            margin-bottom: 80px;
+        }
+
+        .nav-card {
+            background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 24px;
+            padding: 48px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            min-height: 400px;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-icon {
+            font-size: 64px;
+            margin-bottom: 24px;
+        }
+
+        .card-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+
+        .card-description {
+            font-size: 16px;
+            color: #6e6e73;
+            margin-bottom: 24px;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .card-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .card-features li {
+            padding: 8px 0;
+            color: #6e6e73;
+            font-size: 15px;
+        }
+
+        .card-features li:before {
+            content: "✓";
+            color: #34c759;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+        .card-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .nav-card:hover .card-button {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Project Info Section */
+        .info-section {
+            background: #f5f5f7;
+            padding: 80px 20px;
+        }
+
+        .info-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .info-title {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .info-content {
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .info-item {
+            margin-bottom: 32px;
+        }
+
+        .info-item h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        .info-item p {
+            font-size: 16px;
+            color: #6e6e73;
+            line-height: 1.8;
+        }
+
+        .highlight-number {
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        /* Links Section */
+        .links-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .links-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .links-title {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 48px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 16px;
+            text-decoration: none;
+            color: #1d1d1f;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .social-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #f5f5f7;
+            padding: 48px 20px;
+            text-align: center;
+            color: #86868b;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: #6e6e73;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #1d1d1f;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 40px;
+            }
+
+            .hero-subtitle {
+                font-size: 22px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .stats-container {
+                gap: 32px;
+            }
+
+            .stat-value {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .nav-card {
+                padding: 32px;
+            }
+
+            .card-title {
+                font-size: 28px;
+            }
+
+            .info-content {
+                padding: 32px;
+            }
+
+            .social-links {
+                flex-direction: column;
+            }
+
+            .social-link {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">AI Trading Competition</h1>
+        <h2 class="hero-subtitle">深度策略分析报告</h2>
+        <p class="hero-description">
+            通过分析6个顶级AI模型的561个真实交易记录，揭示加密货币交易中成功与失败的关键因素。<br>
+            数据驱动的洞察，助您理解什么才是真正有效的交易策略。
+        </p>
+
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-value">6</div>
+                <div class="stat-label">AI模型</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">561</div>
+                <div class="stat-label">交易记录</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">11</div>
+                <div class="stat-label">天数</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Cards -->
+    <section class="nav-section">
+        <h2 class="section-title">探索分析报告</h2>
+        <p class="section-description">
+            选择一种视角深入了解AI交易策略的成功秘诀和失败教训
+        </p>
+
+        <div class="cards-grid">
+            <!-- Card 1: Summary Cards -->
+            <a href="trading_summary_cards.html" class="nav-card">
+                <div class="card-icon">📊</div>
+                <h3 class="card-title">交易策略速记卡</h3>
+                <p class="card-description">
+                    21张精心设计的卡片，展示每个AI模型的最佳与最差交易案例，包含AI的原始思考和中文翻译。深度剖析qwen3-max的冠军策略和gpt-5的失败教训。
+                </p>
+                <ul class="card-features">
+                    <li>AI思考过程完整呈现</li>
+                    <li>最佳/最差交易案例对比</li>
+                    <li>核心策略洞察总结</li>
+                    <li>可复制的成功要素</li>
+                </ul>
+                <div class="card-button">查看策略卡片 →</div>
+            </a>
+
+            <!-- Card 2: Timeline -->
+            <a href="trading_timeline_with_btc.html" class="nav-card">
+                <div class="card-icon">📈</div>
+                <h3 class="card-title">交易时间线可视化</h3>
+                <p class="card-description">
+                    互动式时间线图表，直观展示6个AI模型在11天内的完整交易历程。对比BTC价格走势，洞察每个决策时刻的市场环境和策略选择。
+                </p>
+                <ul class="card-features">
+                    <li>实时交易轨迹追踪</li>
+                    <li>账户净值动态变化</li>
+                    <li>BTC价格走势对比</li>
+                    <li>交易决策时机分析</li>
+                </ul>
+                <div class="card-button">查看交易时间线 →</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Project Info -->
+    <section class="info-section">
+        <div class="info-container">
+            <h2 class="info-title">项目亮点</h2>
+            <div class="info-content">
+                <div class="info-item">
+                    <h3>🏆 震撼发现：胜率不等于盈利</h3>
+                    <p>
+                        qwen3-max以<span class="highlight-number">27%的低胜率</span>获得<span class="highlight-number">+42.89%收益</span>，
+                        而gpt-5以<span class="highlight-number">51.1%的高胜率</span>却亏损<span class="highlight-number">-72.93%</span>。
+                        数据证明："让盈利奔跑，快速止损"远比"提高胜率"更重要。
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>📉 交易频率反向指标</h3>
+                    <p>
+                        交易次数与收益率呈<span class="highlight-number">-0.78负相关</span>。
+                        qwen3-max仅37次交易获利42.89%，而gemini-2.5-pro进行237次交易却亏损63.49%。
+                        过度交易导致决策疲劳和成本累积。
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>⚖️ 盈亏比决定成败</h3>
+                    <p>
+                        成功模型的盈亏比均≥1.27，失败模型则接近或低于1:1。
+                        数据显示，盈亏比必须<span class="highlight-number">≥1.5:1</span>才能实现长期盈利。
+                        qwen3-max的2.03盈亏比是其制胜关键。
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>🎯 "大机会"策略</h3>
+                    <p>
+                        deepseek的单笔最佳交易<span class="highlight-number">$2,122.27</span>占总盈利的47%。
+                        证明了寻找并抓住少数"大机会"远胜于频繁的小赢交易。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="links-section">
+        <div class="links-container">
+            <h2 class="links-title">开源与社交</h2>
+            <div class="social-links">
+                <a href="https://github.com/karminski/nof1-conversions-analyze" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://x.com/karminski3" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    X (Twitter)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://github.com/karminski/nof1-conversions-analyze" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+            <a href="https://github.com/karminski/nof1-conversions-analyze/blob/main/DOCUMENTS/KEY_INSIGHTS_SUMMARY.md" target="_blank" rel="noopener noreferrer" class="footer-link">文档</a>
+            <a href="https://github.com/karminski/nof1-conversions-analyze/issues" target="_blank" rel="noopener noreferrer" class="footer-link">反馈</a>
+        </div>
+        <p>© 2025 NOF1 Conversions Analyze. 基于561个真实交易记录的深度分析.</p>
+        <p style="margin-top: 8px;">Made with data and insights by <a href="https://x.com/karminski3" target="_blank" rel="noopener noreferrer" class="footer-link">@karminski3</a></p>
+    </footer>
+</body>
+</html>
+

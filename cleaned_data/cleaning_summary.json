@@ -1,0 +1,14 @@
+{
+  "cleaning_timestamp": "2025-11-05T06:22:38.317745",
+  "total_trades": 561,
+  "trades_by_model": {
+    "grok-4": 53,
+    "qwen3-max": 37,
+    "claude-sonnet-4-5": 44,
+    "gemini-2.5-pro": 237,
+    "gpt-5": 135,
+    "deepseek-chat-v3.1": 55
+  },
+  "error_files_count": 0,
+  "error_files": []
+}

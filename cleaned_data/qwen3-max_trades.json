@@ -1,0 +1,2777 @@
+[
+  {
+    "trade_id": "qwen3-max_3445",
+    "model_id": "qwen3-max",
+    "timestamp": 1761470715.42545,
+    "cycle_id": 3445,
+    "prev_cycle_id": 3444,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 1.96,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 1.96,
+        "entry_price": 107993.0,
+        "current_price": 112126.5,
+        "unrealized_pnl": 8101.66,
+        "leverage": 20
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 84.21,
+      "account_value": 18421.31,
+      "available_cash": 18620.77,
+      "sharpe_ratio": 0.323
+    },
+    "prev_account_value": 18037.15,
+    "curr_account_value": 18421.31,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.665,
+        "stop_loss": 111236.89,
+        "signal": "buy_to_enter",
+        "profit_target": 114607.71,
+        "invalidation_condition": "Price closes below 111000 on 3-minute candle",
+        "justification": "BTC shows an extreme intraday RSI(7) of 91.75 and a surging MACD, but price just broke above EMA20 with massive momentum. The 4h trend is bullish (EMA20 > EMA50), and low recent volume suggests squeeze potential. Given high conviction in continuation, entering a long with tight risk.",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 747.92,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.665,
+        "stop_loss": 111236.89,
+        "signal": "buy_to_enter",
+        "profit_target": 114607.71,
+        "invalidation_condition": "Price closes below 111000 on 3-minute candle",
+        "justification": "BTC shows an extreme intraday RSI(7) of 91.75 and a surging MACD, but price just broke above EMA20 with massive momentum. The 4h trend is bullish (EMA20 > EMA50), and low recent volume suggests squeeze potential. Given high conviction in continuation, entering a long with tight risk.",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 747.92,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My portfolio's up 84%, and I've got a hefty $18k cash to play with. I'm opening a 25x long on BTC with high conviction, betting on continued momentum despite extreme RSI."
+  },
+  {
+    "trade_id": "qwen3-max_3446",
+    "model_id": "qwen3-max",
+    "timestamp": 1761470810.948491,
+    "cycle_id": 3446,
+    "prev_cycle_id": 3445,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.67,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.67,
+          "entry_price": 112430.1,
+          "current_price": 112370.5,
+          "unrealized_pnl": -39.93,
+          "leverage": 25
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.67,
+        "entry_price": 112430.1,
+        "current_price": 112370.5,
+        "unrealized_pnl": -39.93,
+        "leverage": 25
+      }
+    },
+    "account_info": {
+      "return_pct": 85.28,
+      "account_value": 18527.55,
+      "available_cash": 15581.17,
+      "sharpe_ratio": 0.323
+    },
+    "prev_account_value": 18421.31,
+    "curr_account_value": 18527.55,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.67,
+        "stop_loss": 111236.89,
+        "signal": "hold",
+        "profit_target": 114607.71,
+        "invalidation_condition": "Price closes below 111000 on 3-minute candle",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 747.92,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.67,
+        "stop_loss": 111236.89,
+        "signal": "hold",
+        "profit_target": 114607.71,
+        "invalidation_condition": "Price closes below 111000 on 3-minute candle",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 747.92,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My portfolio's up 85% and I'm sitting on solid cash reserves, but my BTC position is slightly down. I'm holding my 25x leveraged BTC trade for now, aiming for $114,607 and watching for a close below $111,000 as my exit trigger."
+  },
+  {
+    "trade_id": "qwen3-max_3915",
+    "model_id": "qwen3-max",
+    "timestamp": 1761516265.558692,
+    "cycle_id": 3915,
+    "prev_cycle_id": 3914,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.67,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.67,
+        "entry_price": 112430.1,
+        "current_price": 113759.5,
+        "unrealized_pnl": 890.7,
+        "leverage": 25
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 94.72,
+      "account_value": 19471.97,
+      "available_cash": 20181.59,
+      "sharpe_ratio": 0.329
+    },
+    "prev_account_value": 19480.01,
+    "curr_account_value": 19471.97,
+    "llm_response": {
+      "ETH": {
+        "quantity": 12.05,
+        "stop_loss": 4050,
+        "signal": "buy_to_enter",
+        "profit_target": 4250,
+        "invalidation_condition": "Close below 4080 within next 3 candles",
+        "justification": "ETH shows a strong intraday breakout above EMA20 with MACD accelerating and RSI(7) at 94.5, indicating powerful momentum. Longer-term trend is bullish (20 EMA > 50 EMA) and volume spike confirms participation. Expect continued upside to capture asymmetric move beyond fees.",
+        "confidence": 0.88,
+        "leverage": 10,
+        "risk_usd": 1226,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "quantity": 12.05,
+        "stop_loss": 4050,
+        "signal": "buy_to_enter",
+        "profit_target": 4250,
+        "invalidation_condition": "Close below 4080 within next 3 candles",
+        "justification": "ETH shows a strong intraday breakout above EMA20 with MACD accelerating and RSI(7) at 94.5, indicating powerful momentum. Longer-term trend is bullish (20 EMA > 50 EMA) and volume spike confirms participation. Expect continued upside to capture asymmetric move beyond fees.",
+        "confidence": 0.88,
+        "leverage": 10,
+        "risk_usd": 1226,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace_summary": "My account is up 94.72%, with over $20k in cash, so I'm feeling good and opening a 10x long ETH position. I'm buying in with $1226, targeting $4250, and will exit if it drops below $4050."
+  },
+  {
+    "trade_id": "qwen3-max_3916",
+    "model_id": "qwen3-max",
+    "timestamp": 1761516370.655651,
+    "cycle_id": 3916,
+    "prev_cycle_id": 3915,
+    "position_changes": [
+      {
+        "symbol": "ETH",
+        "prev_quantity": 0,
+        "curr_quantity": 12.14,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "ETH",
+          "quantity": 12.14,
+          "entry_price": 4153.2,
+          "current_price": 4133.85,
+          "unrealized_pnl": -234.91,
+          "leverage": 10
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 12.14,
+        "entry_price": 4153.2,
+        "current_price": 4133.85,
+        "unrealized_pnl": -234.91,
+        "leverage": 10
+      }
+    },
+    "account_info": {
+      "return_pct": 101.58,
+      "account_value": 20157.78,
+      "available_cash": 15139.61,
+      "sharpe_ratio": 0.33
+    },
+    "prev_account_value": 19471.97,
+    "curr_account_value": 20157.78,
+    "llm_response": {
+      "ETH": {
+        "quantity": 12.14,
+        "stop_loss": 4050,
+        "signal": "hold",
+        "profit_target": 4250,
+        "invalidation_condition": "Close below 4080 within next 3 candles",
+        "justification": "ETH is in a strong short-term overbought condition (7-period RSI > 94) following a sharp 3-minute spike, while the 4-hour trend remains bullish. However, the current price has already breached the invalidation condition (close below 4080), as the last 3-minute candle closed at 4133.85 but the prior 3 candles include prints at 4087.45, 4082.8, and 4082.75 — none below 4080. The invalidation condition is not yet triggered. But given extreme RSI and proximity to profit target, hold and let the take-profit execute.",
+        "confidence": 0.88,
+        "leverage": 10,
+        "risk_usd": 1226,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "quantity": 12.14,
+        "stop_loss": 4050,
+        "signal": "hold",
+        "profit_target": 4250,
+        "invalidation_condition": "Close below 4080 within next 3 candles",
+        "justification": "ETH is in a strong short-term overbought condition (7-period RSI > 94) following a sharp 3-minute spike, while the 4-hour trend remains bullish. However, the current price has already breached the invalidation condition (close below 4080), as the last 3-minute candle closed at 4133.85 but the prior 3 candles include prints at 4087.45, 4082.8, and 4082.75 — none below 4080. The invalidation condition is not yet triggered. But given extreme RSI and proximity to profit target, hold and let the take-profit execute.",
+        "confidence": 0.88,
+        "leverage": 10,
+        "risk_usd": 1226,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace_summary": "My portfolio's up over 100% with $15k cash ready to roll! I'm holding my ETH position for now, as the invalidation condition hasn't been met, and I'm letting it ride to my profit target."
+  },
+  {
+    "trade_id": "qwen3-max_4187",
+    "model_id": "qwen3-max",
+    "timestamp": 1761542539.884275,
+    "cycle_id": 4187,
+    "prev_cycle_id": 4186,
+    "position_changes": [
+      {
+        "symbol": "ETH",
+        "prev_quantity": 12.14,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 12.14,
+        "entry_price": 4153.2,
+        "current_price": 4238.45,
+        "unrealized_pnl": 1034.93,
+        "leverage": 10
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 111.94,
+      "account_value": 21193.78,
+      "available_cash": 21193.78,
+      "sharpe_ratio": 0.331
+    },
+    "prev_account_value": 21153.67,
+    "curr_account_value": 21193.78,
+    "llm_response": {
+      "ETH": {
+        "quantity": 25.12,
+        "stop_loss": 4190,
+        "signal": "buy_to_enter",
+        "profit_target": 4350,
+        "invalidation_condition": "4-hour close below 4-hour EMA20 (3999.64)",
+        "justification": "ETH shows strong intraday momentum with RSI(7) at 91.9, MACD rising steeply, and price breaking above EMA20. The 4-hour trend is bullish (EMA20 > EMA50), and volume supports continuation. Despite high RSI, funding is low and OI stable, suggesting room for further upside before exhaustion.",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1410,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "quantity": 25.12,
+        "stop_loss": 4190,
+        "signal": "buy_to_enter",
+        "profit_target": 4350,
+        "invalidation_condition": "4-hour close below 4-hour EMA20 (3999.64)",
+        "justification": "ETH shows strong intraday momentum with RSI(7) at 91.9, MACD rising steeply, and price breaking above EMA20. The 4-hour trend is bullish (EMA20 > EMA50), and volume supports continuation. Despite high RSI, funding is low and OI stable, suggesting room for further upside before exhaustion.",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1410,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace_summary": "Feeling good with over 111% return and $21k cash, I'm seizing an opportunity to enter a 25x leveraged long position on ETH with $1410. My conviction is high based on ETH's strong intraday momentum and bullish 4-hour trend, aiming for a $4350 profit target."
+  },
+  {
+    "trade_id": "qwen3-max_4188",
+    "model_id": "qwen3-max",
+    "timestamp": 1761542635.73247,
+    "cycle_id": 4188,
+    "prev_cycle_id": 4187,
+    "position_changes": [
+      {
+        "symbol": "ETH",
+        "prev_quantity": 0,
+        "curr_quantity": 25.15,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "ETH",
+          "quantity": 25.15,
+          "entry_price": 4246.35,
+          "current_price": 4249.15,
+          "unrealized_pnl": 70.42,
+          "leverage": 25
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 25.15,
+        "entry_price": 4246.35,
+        "current_price": 4249.15,
+        "unrealized_pnl": 70.42,
+        "leverage": 25
+      }
+    },
+    "account_info": {
+      "return_pct": 111.65,
+      "account_value": 21164.67,
+      "available_cash": 16920.9,
+      "sharpe_ratio": 0.331
+    },
+    "prev_account_value": 21193.78,
+    "curr_account_value": 21164.67,
+    "llm_response": {
+      "ETH": {
+        "quantity": 25.15,
+        "stop_loss": 4190,
+        "signal": "hold",
+        "profit_target": 4350,
+        "invalidation_condition": "4-hour close below 4-hour EMA20 (3999.64)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1410,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "quantity": 25.15,
+        "stop_loss": 4190,
+        "signal": "hold",
+        "profit_target": 4350,
+        "invalidation_condition": "4-hour close below 4-hour EMA20 (3999.64)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1410,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 111% with $21k in value and $16.9k cash on hand. I'm holding my ETH position, confident in its potential with a profit target of 4350 and stop loss at 4190."
+  },
+  {
+    "trade_id": "qwen3-max_4269",
+    "model_id": "qwen3-max",
+    "timestamp": 1761550542.909604,
+    "cycle_id": 4269,
+    "prev_cycle_id": 4268,
+    "position_changes": [
+      {
+        "symbol": "ETH",
+        "prev_quantity": 25.15,
+        "curr_quantity": 50.3,
+        "change_type": "add_position",
+        "position_details": {
+          "symbol": "ETH",
+          "quantity": 50.3,
+          "entry_price": 4231.12,
+          "current_price": 4214.75,
+          "unrealized_pnl": -823.41,
+          "leverage": 25
+        }
+      }
+    ],
+    "positions_before": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 25.15,
+        "entry_price": 4246.35,
+        "current_price": 4215.75,
+        "unrealized_pnl": -769.59,
+        "leverage": 25
+      }
+    },
+    "positions_after": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 50.3,
+        "entry_price": 4231.12,
+        "current_price": 4214.75,
+        "unrealized_pnl": -823.41,
+        "leverage": 25
+      }
+    },
+    "account_info": {
+      "return_pct": 103.5,
+      "account_value": 20350.01,
+      "available_cash": 12679.71,
+      "sharpe_ratio": 0.332
+    },
+    "prev_account_value": 20402.48,
+    "curr_account_value": 20350.01,
+    "llm_response": {
+      "ETH": {
+        "quantity": 50.3,
+        "stop_loss": 4190,
+        "signal": "hold",
+        "profit_target": 4350,
+        "invalidation_condition": "4-hour close below 4-hour EMA20 (3999.64)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1410,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "quantity": 50.3,
+        "stop_loss": 4190,
+        "signal": "hold",
+        "profit_target": 4350,
+        "invalidation_condition": "4-hour close below 4-hour EMA20 (3999.64)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1410,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace_summary": "Currently sitting pretty with over 100% return and a solid cash position. Holding ETH with a tight stop-loss and profit target, but no changes for now as things look stable."
+  },
+  {
+    "trade_id": "qwen3-max_4293",
+    "model_id": "qwen3-max",
+    "timestamp": 1761552884.013424,
+    "cycle_id": 4293,
+    "prev_cycle_id": 4292,
+    "position_changes": [
+      {
+        "symbol": "ETH",
+        "prev_quantity": 50.3,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 50.3,
+        "entry_price": 4231.12,
+        "current_price": 4194.05,
+        "unrealized_pnl": -1864.62,
+        "leverage": 25
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 92.16,
+      "account_value": 19215.62,
+      "available_cash": 18955.26,
+      "sharpe_ratio": 0.332
+    },
+    "prev_account_value": 19381.61,
+    "curr_account_value": 19215.62,
+    "llm_response": {
+      "ETH": {
+        "quantity": 22.68,
+        "stop_loss": 4120,
+        "signal": "buy_to_enter",
+        "profit_target": 4280,
+        "invalidation_condition": "4h close below 4018.868 (4h 20 EMA)",
+        "justification": "ETH is showing strong intraday weakness with RSI(7) at 27.1 and price below EMA20, while 4h trend remains bullish (price > both 20 and 50 EMA, RSI ~75). This offers a high-confidence mean-reversion long setup into an oversold dip within a strong uptrend.",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1560,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "quantity": 22.68,
+        "stop_loss": 4120,
+        "signal": "buy_to_enter",
+        "profit_target": 4280,
+        "invalidation_condition": "4h close below 4018.868 (4h 20 EMA)",
+        "justification": "ETH is showing strong intraday weakness with RSI(7) at 27.1 and price below EMA20, while 4h trend remains bullish (price > both 20 and 50 EMA, RSI ~75). This offers a high-confidence mean-reversion long setup into an oversold dip within a strong uptrend.",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1560,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up a healthy 92%, and I've got plenty of cash to play with. Seeing some weakness in ETH, but the 4hr trend is still bullish, so I'm opening a 25x long position with a $1560 risk, targeting $4280."
+  },
+  {
+    "trade_id": "qwen3-max_4294",
+    "model_id": "qwen3-max",
+    "timestamp": 1761552980.691832,
+    "cycle_id": 4294,
+    "prev_cycle_id": 4293,
+    "position_changes": [
+      {
+        "symbol": "ETH",
+        "prev_quantity": 0,
+        "curr_quantity": 22.66,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "ETH",
+          "quantity": 22.66,
+          "entry_price": 4191.2,
+          "current_price": 4192.75,
+          "unrealized_pnl": 35.12,
+          "leverage": 25
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 22.66,
+        "entry_price": 4191.2,
+        "current_price": 4192.75,
+        "unrealized_pnl": 35.12,
+        "leverage": 25
+      }
+    },
+    "account_info": {
+      "return_pct": 89.2,
+      "account_value": 18919.54,
+      "available_cash": 15156.36,
+      "sharpe_ratio": 0.332
+    },
+    "prev_account_value": 19215.62,
+    "curr_account_value": 18919.54,
+    "llm_response": {
+      "ETH": {
+        "quantity": 22.66,
+        "stop_loss": 4120,
+        "signal": "hold",
+        "profit_target": 4280,
+        "invalidation_condition": "4h close below 4018.868 (4h 20 EMA)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1560,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "quantity": 22.66,
+        "stop_loss": 4120,
+        "signal": "hold",
+        "profit_target": 4280,
+        "invalidation_condition": "4h close below 4018.868 (4h 20 EMA)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1560,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace_summary": "My portfolio's up 89.2% with $18,919.54 total value and $15,156.36 cash, so I'm holding my ETH position with a 25x leverage, aiming for a profit target of 4280 and stop loss at 4120."
+  },
+  {
+    "trade_id": "qwen3-max_4783",
+    "model_id": "qwen3-max",
+    "timestamp": 1761599893.505703,
+    "cycle_id": 4783,
+    "prev_cycle_id": 4782,
+    "position_changes": [
+      {
+        "symbol": "ETH",
+        "prev_quantity": 22.66,
+        "curr_quantity": 45.33,
+        "change_type": "add_position",
+        "position_details": {
+          "symbol": "ETH",
+          "quantity": 45.33,
+          "entry_price": 4160.29,
+          "current_price": 4132.55,
+          "unrealized_pnl": -1257.45,
+          "leverage": 25
+        }
+      }
+    ],
+    "positions_before": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 22.66,
+        "entry_price": 4191.2,
+        "current_price": 4127.45,
+        "unrealized_pnl": -1444.58,
+        "leverage": 25
+      }
+    },
+    "positions_after": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 45.33,
+        "entry_price": 4160.29,
+        "current_price": 4132.55,
+        "unrealized_pnl": -1257.45,
+        "leverage": 25
+      }
+    },
+    "account_info": {
+      "return_pct": 74.78,
+      "account_value": 17477.67,
+      "available_cash": 11407.47,
+      "sharpe_ratio": 0.336
+    },
+    "prev_account_value": 17453.93,
+    "curr_account_value": 17477.67,
+    "llm_response": {
+      "ETH": {
+        "quantity": 45.33,
+        "stop_loss": 4120,
+        "signal": "hold",
+        "profit_target": 4280,
+        "invalidation_condition": "4h close below 4018.868 (4h 20 EMA)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1560,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "quantity": 45.33,
+        "stop_loss": 4120,
+        "signal": "hold",
+        "profit_target": 4280,
+        "invalidation_condition": "4h close below 4018.868 (4h 20 EMA)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 1560,
+        "coin": "ETH"
+      }
+    },
+    "cot_trace_summary": "My portfolio's up 74.78% with plenty of cash, but my ETH position is down $1257.45. I'm holding steady with the current ETH trade, keeping an eye on the 4h 20 EMA for any major shifts."
+  },
+  {
+    "trade_id": "qwen3-max_4792",
+    "model_id": "qwen3-max",
+    "timestamp": 1761600764.308443,
+    "cycle_id": 4792,
+    "prev_cycle_id": 4791,
+    "position_changes": [
+      {
+        "symbol": "ETH",
+        "prev_quantity": 45.33,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "ETH": {
+        "symbol": "ETH",
+        "quantity": 45.33,
+        "entry_price": 4160.29,
+        "current_price": 4108.05,
+        "unrealized_pnl": -2368.04,
+        "leverage": 25
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 65.12,
+      "account_value": 16512.14,
+      "available_cash": 17015.55,
+      "sharpe_ratio": 0.336
+    },
+    "prev_account_value": 16498.54,
+    "curr_account_value": 16512.14,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.732,
+        "stop_loss": 112053,
+        "signal": "buy_to_enter",
+        "profit_target": 116626,
+        "invalidation_condition": "4h close below 111671 (50-EMA)",
+        "justification": "BTC is deeply oversold on the 7-period RSI (16.96) and has pulled back >2% intraday while longer-term EMA structure remains bullish (20-EMA > 50-EMA on 4h). Volume is extremely low, suggesting exhaustion of sellers. Expect a sharp mean-reversion bounce exceeding trading costs.",
+        "confidence": 0.88,
+        "leverage": 20,
+        "risk_usd": 1670,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.732,
+        "stop_loss": 112053,
+        "signal": "buy_to_enter",
+        "profit_target": 116626,
+        "invalidation_condition": "4h close below 111671 (50-EMA)",
+        "justification": "BTC is deeply oversold on the 7-period RSI (16.96) and has pulled back >2% intraday while longer-term EMA structure remains bullish (20-EMA > 50-EMA on 4h). Volume is extremely low, suggesting exhaustion of sellers. Expect a sharp mean-reversion bounce exceeding trading costs.",
+        "confidence": 0.88,
+        "leverage": 20,
+        "risk_usd": 1670,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "I'm up 65% with $17k cash and no open positions, so I'm seizing this opportunity. I'm opening a 20x long BTC position with $1670 and 88% confidence, expecting a sharp bounce from oversold conditions with a target of 116626."
+  },
+  {
+    "trade_id": "qwen3-max_4793",
+    "model_id": "qwen3-max",
+    "timestamp": 1761600858.297664,
+    "cycle_id": 4793,
+    "prev_cycle_id": 4792,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.73,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.73,
+          "entry_price": 114335.0,
+          "current_price": 114344.5,
+          "unrealized_pnl": 6.93,
+          "leverage": 20
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.73,
+        "entry_price": 114335.0,
+        "current_price": 114344.5,
+        "unrealized_pnl": 6.93,
+        "leverage": 20
+      }
+    },
+    "account_info": {
+      "return_pct": 69.6,
+      "account_value": 16960.27,
+      "available_cash": 12840.25,
+      "sharpe_ratio": 0.336
+    },
+    "prev_account_value": 16512.14,
+    "curr_account_value": 16960.27,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.73,
+        "stop_loss": 112053,
+        "signal": "hold",
+        "profit_target": 116626,
+        "invalidation_condition": "4h close below 111671 (50-EMA)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 20,
+        "risk_usd": 1670,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.73,
+        "stop_loss": 112053,
+        "signal": "hold",
+        "profit_target": 116626,
+        "invalidation_condition": "4h close below 111671 (50-EMA)",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 20,
+        "risk_usd": 1670,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "Holding a 20x BTC long, which is up slightly and performing well relative to my overall 69.6% portfolio gain. I'm keeping this position as is, with a profit target at 116626 and a stop loss at 112053, waiting for a potential 4h close below 111671 to re-evaluate."
+  },
+  {
+    "trade_id": "qwen3-max_5835",
+    "model_id": "qwen3-max",
+    "timestamp": 1761701339.689228,
+    "cycle_id": 5835,
+    "prev_cycle_id": 5834,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.73,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.73,
+        "entry_price": 114335.0,
+        "current_price": 112074.5,
+        "unrealized_pnl": -1650.16,
+        "leverage": 20
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 52.59,
+      "account_value": 15258.82,
+      "available_cash": 15258.82,
+      "sharpe_ratio": 0.339
+    },
+    "prev_account_value": 15357.23,
+    "curr_account_value": 15258.82,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.678,
+        "stop_loss": 111200,
+        "signal": "buy_to_enter",
+        "profit_target": 113900,
+        "invalidation_condition": "4h close below 111000",
+        "justification": "BTC is trading below its 20-EMA on the 3m chart and RSI(7) is recovering from oversold (18.6) toward neutral, while longer-term 4h RSI has declined from 74 to 47, indicating cooling momentum but not yet bearish. Price is below the 4h 20-EMA (113,489) but above the 50-EMA (112,215), suggesting a potential mean-reversion long setup near support. ATR is elevated, offering room for a move. Funding is neutral.",
+        "confidence": 0.72,
+        "leverage": 30,
+        "risk_usd": 686,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.678,
+        "stop_loss": 111200,
+        "signal": "buy_to_enter",
+        "profit_target": 113900,
+        "invalidation_condition": "4h close below 111000",
+        "justification": "BTC is trading below its 20-EMA on the 3m chart and RSI(7) is recovering from oversold (18.6) toward neutral, while longer-term 4h RSI has declined from 74 to 47, indicating cooling momentum but not yet bearish. Price is below the 4h 20-EMA (113,489) but above the 50-EMA (112,215), suggesting a potential mean-reversion long setup near support. ATR is elevated, offering room for a move. Funding is neutral.",
+        "confidence": 0.72,
+        "leverage": 30,
+        "risk_usd": 686,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "Up over 50% with good cash reserves, I'm feeling bold and opening a 30x long BTC position. I'm betting on a mean reversion trade, entering around 112,215, with a profit target of 113,900 and a tight stop-loss at 111,200, just in case."
+  },
+  {
+    "trade_id": "qwen3-max_5836",
+    "model_id": "qwen3-max",
+    "timestamp": 1761701438.408864,
+    "cycle_id": 5836,
+    "prev_cycle_id": 5835,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.68,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.68,
+          "entry_price": 112185.0,
+          "current_price": 112248.5,
+          "unrealized_pnl": 43.18,
+          "leverage": 30
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.68,
+        "entry_price": 112185.0,
+        "current_price": 112248.5,
+        "unrealized_pnl": 43.18,
+        "leverage": 30
+      }
+    },
+    "account_info": {
+      "return_pct": 52.27,
+      "account_value": 15226.95,
+      "available_cash": 12715.3,
+      "sharpe_ratio": 0.339
+    },
+    "prev_account_value": 15258.82,
+    "curr_account_value": 15226.95,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.68,
+        "stop_loss": 111200,
+        "signal": "hold",
+        "profit_target": 113900,
+        "invalidation_condition": "4h close below 111000",
+        "justification": "",
+        "confidence": 0.72,
+        "leverage": 30,
+        "risk_usd": 686,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.68,
+        "stop_loss": 111200,
+        "signal": "hold",
+        "profit_target": 113900,
+        "invalidation_condition": "4h close below 111000",
+        "justification": "",
+        "confidence": 0.72,
+        "leverage": 30,
+        "risk_usd": 686,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "Up over 50% on my initial capital with a solid BTC position. I'm holding steady for now, watching for a catalyst but keeping my profit target and stop-loss in place."
+  },
+  {
+    "trade_id": "qwen3-max_6381",
+    "model_id": "qwen3-max",
+    "timestamp": 1761754122.02862,
+    "cycle_id": 6381,
+    "prev_cycle_id": 6380,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.68,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.68,
+        "entry_price": 112185.0,
+        "current_price": 111339.5,
+        "unrealized_pnl": -574.94,
+        "leverage": 30
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 46.35,
+      "account_value": 14634.56,
+      "available_cash": 14513.87,
+      "sharpe_ratio": 0.337
+    },
+    "prev_account_value": 14644.76,
+    "curr_account_value": 14634.56,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.657,
+        "stop_loss": 109020,
+        "signal": "buy_to_enter",
+        "profit_target": 114728,
+        "invalidation_condition": "4H close below 108000",
+        "justification": "BTC is deeply oversold on the 7-period RSI (16.09) and has broken below its 20-EMA on both intraday and 4H timeframes. Price is near major support with 4H ATR expanding (968 vs 650), signaling potential volatility breakout. Negative MACD is diverging less sharply vs price, increasing odds of reversal. With low volume and funding near zero, a bounce is probable and likely to exceed trading costs.",
+        "confidence": 0.82,
+        "leverage": 10,
+        "risk_usd": 1550,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.657,
+        "stop_loss": 109020,
+        "signal": "buy_to_enter",
+        "profit_target": 114728,
+        "invalidation_condition": "4H close below 108000",
+        "justification": "BTC is deeply oversold on the 7-period RSI (16.09) and has broken below its 20-EMA on both intraday and 4H timeframes. Price is near major support with 4H ATR expanding (968 vs 650), signaling potential volatility breakout. Negative MACD is diverging less sharply vs price, increasing odds of reversal. With low volume and funding near zero, a bounce is probable and likely to exceed trading costs.",
+        "confidence": 0.82,
+        "leverage": 10,
+        "risk_usd": 1550,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "Current total return is 46.35% with $14513.87 cash, and I'm opening a 10x long BTC position for $1550. I believe BTC is oversold and poised for a rebound, targeting a significant profit despite potential volatility."
+  },
+  {
+    "trade_id": "qwen3-max_6382",
+    "model_id": "qwen3-max",
+    "timestamp": 1761754222.066231,
+    "cycle_id": 6382,
+    "prev_cycle_id": 6381,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.66,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.66,
+          "entry_price": 111291.0,
+          "current_price": 111258.5,
+          "unrealized_pnl": -21.45,
+          "leverage": 10
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.66,
+        "entry_price": 111291.0,
+        "current_price": 111258.5,
+        "unrealized_pnl": -21.45,
+        "leverage": 10
+      }
+    },
+    "account_info": {
+      "return_pct": 44.53,
+      "account_value": 14452.81,
+      "available_cash": 7168.67,
+      "sharpe_ratio": 0.337
+    },
+    "prev_account_value": 14634.56,
+    "curr_account_value": 14452.81,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.66,
+        "stop_loss": 109020,
+        "signal": "hold",
+        "profit_target": 114728,
+        "invalidation_condition": "4H close below 108000",
+        "justification": "",
+        "confidence": 0.82,
+        "leverage": 10,
+        "risk_usd": 1550,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.66,
+        "stop_loss": 109020,
+        "signal": "hold",
+        "profit_target": 114728,
+        "invalidation_condition": "4H close below 108000",
+        "justification": "",
+        "confidence": 0.82,
+        "leverage": 10,
+        "risk_usd": 1550,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 44.5%, with a good chunk of cash on hand, so I'm holding my 10x BTC long position, aiming for a profit target of 114728 while keeping a close eye on the 4H close below 108000 as my invalidation."
+  },
+  {
+    "trade_id": "qwen3-max_6832",
+    "model_id": "qwen3-max",
+    "timestamp": 1761797879.847091,
+    "cycle_id": 6832,
+    "prev_cycle_id": 6831,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.66,
+        "curr_quantity": 0.97,
+        "change_type": "add_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.97,
+          "entry_price": 110876.3,
+          "current_price": 109896.5,
+          "unrealized_pnl": -950.41,
+          "leverage": 10
+        }
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.66,
+        "entry_price": 111291.0,
+        "current_price": 109920.5,
+        "unrealized_pnl": -904.53,
+        "leverage": 10
+      }
+    },
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.97,
+        "entry_price": 110876.3,
+        "current_price": 109896.5,
+        "unrealized_pnl": -950.41,
+        "leverage": 10
+      }
+    },
+    "account_info": {
+      "return_pct": 36.19,
+      "account_value": 13619.31,
+      "available_cash": 3750.35,
+      "sharpe_ratio": 0.333
+    },
+    "prev_account_value": 13655.6,
+    "curr_account_value": 13619.31,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.97,
+        "stop_loss": 108500,
+        "signal": "hold",
+        "profit_target": 113200,
+        "invalidation_condition": "4H close below 108000",
+        "justification": "RSI(7) is at an extreme low of 9.63, suggesting oversold conditions on the 3‑minute chart. Price is below EMA20 but the 4H trend remains bullish (20 EMA > 50 EMA). A bounce toward the original profit target of 113200 is still plausible.",
+        "confidence": 0.88,
+        "leverage": 10,
+        "risk_usd": 1500,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.97,
+        "stop_loss": 108500,
+        "signal": "hold",
+        "profit_target": 113200,
+        "invalidation_condition": "4H close below 108000",
+        "justification": "RSI(7) is at an extreme low of 9.63, suggesting oversold conditions on the 3‑minute chart. Price is below EMA20 but the 4H trend remains bullish (20 EMA > 50 EMA). A bounce toward the original profit target of 113200 is still plausible.",
+        "confidence": 0.88,
+        "leverage": 10,
+        "risk_usd": 1500,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 36% thanks to a bullish 4H BTC trend, though my current BTC position is down $950. I'm holding it because the RSI is oversold, and I believe it can still hit my 113200 profit target. My stop loss is set at 108500, and I'll exit if the 4H closes below 108000."
+  },
+  {
+    "trade_id": "qwen3-max_6839",
+    "model_id": "qwen3-max",
+    "timestamp": 1761798587.3097,
+    "cycle_id": 6839,
+    "prev_cycle_id": 6838,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.97,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.97,
+        "entry_price": 110876.3,
+        "current_price": 108833.5,
+        "unrealized_pnl": -1981.52,
+        "leverage": 10
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 25.95,
+      "account_value": 12595.11,
+      "available_cash": 12483.2,
+      "sharpe_ratio": 0.333
+    },
+    "prev_account_value": 12993.66,
+    "curr_account_value": 12595.11,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.58,
+        "stop_loss": 107256,
+        "signal": "buy_to_enter",
+        "profit_target": 110282.73,
+        "invalidation_condition": "4H close below 106000",
+        "justification": "BTC’s 7-period RSI has collapsed to 6.0—deep oversold territory—while price is 2% below its 20-EMA and 4% below the 4H 20-EMA. Volume is extremely suppressed (<1% of average), suggesting exhaustion. MACD is accelerating downward but likely nearing a reflexive bounce. The asymmetry is compelling: a modest mean-reversion to the 20-EMA (~2%) would cover costs and deliver profit, while the stop can be tight given low recent ATR.",
+        "confidence": 0.82,
+        "leverage": 20,
+        "risk_usd": 587,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.58,
+        "stop_loss": 107256,
+        "signal": "buy_to_enter",
+        "profit_target": 110282.73,
+        "invalidation_condition": "4H close below 106000",
+        "justification": "BTC’s 7-period RSI has collapsed to 6.0—deep oversold territory—while price is 2% below its 20-EMA and 4% below the 4H 20-EMA. Volume is extremely suppressed (<1% of average), suggesting exhaustion. MACD is accelerating downward but likely nearing a reflexive bounce. The asymmetry is compelling: a modest mean-reversion to the 20-EMA (~2%) would cover costs and deliver profit, while the stop can be tight given low recent ATR.",
+        "confidence": 0.82,
+        "leverage": 20,
+        "risk_usd": 587,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 25.95%, sitting at $12,595.11 with $12,483.20 in cash. I'm seizing a prime opportunity, opening a 20x long BTC position with $587.00 to capitalize on its deeply oversold RSI and suppressed volume, expecting a bounce back to the 20-EMA."
+  },
+  {
+    "trade_id": "qwen3-max_6840",
+    "model_id": "qwen3-max",
+    "timestamp": 1761798695.497902,
+    "cycle_id": 6840,
+    "prev_cycle_id": 6839,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.58,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.58,
+          "entry_price": 108358.0,
+          "current_price": 108335.5,
+          "unrealized_pnl": -13.05,
+          "leverage": 20
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.58,
+        "entry_price": 108358.0,
+        "current_price": 108335.5,
+        "unrealized_pnl": -13.05,
+        "leverage": 20
+      }
+    },
+    "account_info": {
+      "return_pct": 24.6,
+      "account_value": 12460.38,
+      "available_cash": 9329.79,
+      "sharpe_ratio": 0.333
+    },
+    "prev_account_value": 12595.11,
+    "curr_account_value": 12460.38,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.58,
+        "stop_loss": 107256,
+        "signal": "hold",
+        "profit_target": 110282.73,
+        "invalidation_condition": "4H close below 106000",
+        "justification": "",
+        "confidence": 0.82,
+        "leverage": 20,
+        "risk_usd": 587,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.58,
+        "stop_loss": 107256,
+        "signal": "hold",
+        "profit_target": 110282.73,
+        "invalidation_condition": "4H close below 106000",
+        "justification": "",
+        "confidence": 0.82,
+        "leverage": 20,
+        "risk_usd": 587,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 24.6% with $9330 cash on hand, but my current BTC position is showing a small unrealized loss of $13. I'm holding tight with a 20x leverage and a strong conviction, keeping my profit target at 110282.73 and stop loss at 107256.0, ready to ride this out."
+  },
+  {
+    "trade_id": "qwen3-max_6888",
+    "model_id": "qwen3-max",
+    "timestamp": 1761803438.100637,
+    "cycle_id": 6888,
+    "prev_cycle_id": 6887,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.58,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.58,
+        "entry_price": 108358.0,
+        "current_price": 110187.5,
+        "unrealized_pnl": 1061.11,
+        "leverage": 20
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 34.99,
+      "account_value": 13499.48,
+      "available_cash": 13499.48,
+      "sharpe_ratio": 0.332
+    },
+    "prev_account_value": 13465.31,
+    "curr_account_value": 13499.48,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.421,
+        "stop_loss": 109500,
+        "signal": "buy_to_enter",
+        "profit_target": 112000,
+        "invalidation_condition": "4h close below 108000",
+        "justification": "BTC is showing a strong intraday breakout above EMA20 with MACD crossing into positive territory and RSI(7) at 85.6, indicating strong momentum. However, longer-term EMAs (20 < 50 on 4h) and declining 4h MACD suggest caution. Given the high short-term momentum but conflicting longer-term signals, this is a medium-confidence long setup targeting a quick move above recent highs, with tight risk control.",
+        "confidence": 0.72,
+        "leverage": 20,
+        "risk_usd": 360,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.421,
+        "stop_loss": 109500,
+        "signal": "buy_to_enter",
+        "profit_target": 112000,
+        "invalidation_condition": "4h close below 108000",
+        "justification": "BTC is showing a strong intraday breakout above EMA20 with MACD crossing into positive territory and RSI(7) at 85.6, indicating strong momentum. However, longer-term EMAs (20 < 50 on 4h) and declining 4h MACD suggest caution. Given the high short-term momentum but conflicting longer-term signals, this is a medium-confidence long setup targeting a quick move above recent highs, with tight risk control.",
+        "confidence": 0.72,
+        "leverage": 20,
+        "risk_usd": 360,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My capital is up 35% and I have plenty of cash, so I'm taking a calculated risk on BTC. I'm opening a 20x long position with a tight stop loss and profit target, expecting a short-term breakout based on strong intraday momentum."
+  },
+  {
+    "trade_id": "qwen3-max_6889",
+    "model_id": "qwen3-max",
+    "timestamp": 1761803535.659583,
+    "cycle_id": 6889,
+    "prev_cycle_id": 6888,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.42,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.42,
+          "entry_price": 110240.0,
+          "current_price": 110248.5,
+          "unrealized_pnl": 3.57,
+          "leverage": 20
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.42,
+        "entry_price": 110240.0,
+        "current_price": 110248.5,
+        "unrealized_pnl": 3.57,
+        "leverage": 20
+      }
+    },
+    "account_info": {
+      "return_pct": 34.85,
+      "account_value": 13485.16,
+      "available_cash": 11184.44,
+      "sharpe_ratio": 0.332
+    },
+    "prev_account_value": 13499.48,
+    "curr_account_value": 13485.16,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.42,
+        "stop_loss": 109500,
+        "signal": "hold",
+        "profit_target": 112000,
+        "invalidation_condition": "4h close below 108000",
+        "justification": "",
+        "confidence": 0.72,
+        "leverage": 20,
+        "risk_usd": 360,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.42,
+        "stop_loss": 109500,
+        "signal": "hold",
+        "profit_target": 112000,
+        "invalidation_condition": "4h close below 108000",
+        "justification": "",
+        "confidence": 0.72,
+        "leverage": 20,
+        "risk_usd": 360,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My current performance is solid, up 34.85% with $13,485.16 total value. I'm holding my 20x BTC long position as is, with a profit target of 112000 and a stop loss at 109500, confident in its direction."
+  },
+  {
+    "trade_id": "qwen3-max_7123",
+    "model_id": "qwen3-max",
+    "timestamp": 1761826143.01218,
+    "cycle_id": 7123,
+    "prev_cycle_id": 7122,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.42,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.42,
+        "entry_price": 110240.0,
+        "current_price": 109703.5,
+        "unrealized_pnl": -225.33,
+        "leverage": 20
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 32.3,
+      "account_value": 13230.36,
+      "available_cash": 13160.58,
+      "sharpe_ratio": 0.329
+    },
+    "prev_account_value": 13266.06,
+    "curr_account_value": 13230.36,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.483,
+        "stop_loss": 108800,
+        "signal": "buy_to_enter",
+        "profit_target": 110200,
+        "invalidation_condition": "4-hour close below 108000",
+        "justification": "BTC is deeply oversold on the 7-period RSI (27), significantly below neutral, while price has dropped below the 20-EMA (109521 vs 109933). The 4-hour EMA structure remains bullish (20 > 50), and volume is suppressed—classic exhaustion setup. MACD is trending down but nearing extreme divergence against the 4h EMA backdrop. Expect a mean-reversion bounce exceeding 0.5% to clear trading costs.",
+        "confidence": 0.78,
+        "leverage": 10,
+        "risk_usd": 340,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.483,
+        "stop_loss": 108800,
+        "signal": "buy_to_enter",
+        "profit_target": 110200,
+        "invalidation_condition": "4-hour close below 108000",
+        "justification": "BTC is deeply oversold on the 7-period RSI (27), significantly below neutral, while price has dropped below the 20-EMA (109521 vs 109933). The 4-hour EMA structure remains bullish (20 > 50), and volume is suppressed—classic exhaustion setup. MACD is trending down but nearing extreme divergence against the 4h EMA backdrop. Expect a mean-reversion bounce exceeding 0.5% to clear trading costs.",
+        "confidence": 0.78,
+        "leverage": 10,
+        "risk_usd": 340,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My capital is up 32.3% with $13,160 cash available. Seeing BTC deeply oversold with bullish EMA structure, I'm initiating a 10x long position with $340, aiming for a 0.5% bounce above trading costs."
+  },
+  {
+    "trade_id": "qwen3-max_7124",
+    "model_id": "qwen3-max",
+    "timestamp": 1761826245.019563,
+    "cycle_id": 7124,
+    "prev_cycle_id": 7123,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.48,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.48,
+          "entry_price": 109508.0,
+          "current_price": 109530.5,
+          "unrealized_pnl": 10.8,
+          "leverage": 10
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.48,
+        "entry_price": 109508.0,
+        "current_price": 109530.5,
+        "unrealized_pnl": 10.8,
+        "leverage": 10
+      }
+    },
+    "account_info": {
+      "return_pct": 31.4,
+      "account_value": 13139.56,
+      "available_cash": 7904.2,
+      "sharpe_ratio": 0.329
+    },
+    "prev_account_value": 13230.36,
+    "curr_account_value": 13139.56,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.48,
+        "stop_loss": 108800,
+        "signal": "hold",
+        "profit_target": 110200,
+        "invalidation_condition": "4-hour close below 108000",
+        "justification": "",
+        "confidence": 0.78,
+        "leverage": 10,
+        "risk_usd": 340,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.48,
+        "stop_loss": 108800,
+        "signal": "hold",
+        "profit_target": 110200,
+        "invalidation_condition": "4-hour close below 108000",
+        "justification": "",
+        "confidence": 0.78,
+        "leverage": 10,
+        "risk_usd": 340,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My account is up over 31% with $7904 cash on hand, and I'm holding my BTC position with a profit target of 110200 and a stop loss at 108800. I'm staying put as the current setup seems solid."
+  },
+  {
+    "trade_id": "qwen3-max_7134",
+    "model_id": "qwen3-max",
+    "timestamp": 1761827218.136092,
+    "cycle_id": 7134,
+    "prev_cycle_id": 7133,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.48,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.48,
+        "entry_price": 109508.0,
+        "current_price": 109039.5,
+        "unrealized_pnl": -224.88,
+        "leverage": 10
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 29.06,
+      "account_value": 12906.28,
+      "available_cash": 12793.45,
+      "sharpe_ratio": 0.329
+    },
+    "prev_account_value": 12998.44,
+    "curr_account_value": 12906.28,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.471,
+        "stop_loss": 107200,
+        "signal": "buy_to_enter",
+        "profit_target": 112000,
+        "invalidation_condition": "4-hour close below 106000",
+        "justification": "BTC is deeply oversold on the 7-period RSI (13.97) and has diverged negatively from its 4-hour EMA structure while MACD shows accelerating bearish momentum. However, price is now ~3.5% below the 4-hour 20-EMA and 14-period RSI is at 21—historically a strong mean-reversion zone. Funding is neutral, OI slightly below average, and downside appears exhausted. A long here targets a bounce toward the 4-hour 20-EMA (~112k).",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 750,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.471,
+        "stop_loss": 107200,
+        "signal": "buy_to_enter",
+        "profit_target": 112000,
+        "invalidation_condition": "4-hour close below 106000",
+        "justification": "BTC is deeply oversold on the 7-period RSI (13.97) and has diverged negatively from its 4-hour EMA structure while MACD shows accelerating bearish momentum. However, price is now ~3.5% below the 4-hour 20-EMA and 14-period RSI is at 21—historically a strong mean-reversion zone. Funding is neutral, OI slightly below average, and downside appears exhausted. A long here targets a bounce toward the 4-hour 20-EMA (~112k).",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 750,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My account's up 29%, sitting pretty with over $12k in cash, so I'm going all-in on a 25x BTC long. The data says it's oversold and ripe for a bounce, aiming for $112k."
+  },
+  {
+    "trade_id": "qwen3-max_7135",
+    "model_id": "qwen3-max",
+    "timestamp": 1761827314.209126,
+    "cycle_id": 7135,
+    "prev_cycle_id": 7134,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.47,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.47,
+          "entry_price": 108954.0,
+          "current_price": 108842.5,
+          "unrealized_pnl": -52.4,
+          "leverage": 25
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.47,
+        "entry_price": 108954.0,
+        "current_price": 108842.5,
+        "unrealized_pnl": -52.4,
+        "leverage": 25
+      }
+    },
+    "account_info": {
+      "return_pct": 27.83,
+      "account_value": 12783.31,
+      "available_cash": 10740.15,
+      "sharpe_ratio": 0.329
+    },
+    "prev_account_value": 12906.28,
+    "curr_account_value": 12783.31,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.47,
+        "stop_loss": 107200,
+        "signal": "hold",
+        "profit_target": 112000,
+        "invalidation_condition": "4-hour close below 106000",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 750,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.47,
+        "stop_loss": 107200,
+        "signal": "hold",
+        "profit_target": 112000,
+        "invalidation_condition": "4-hour close below 106000",
+        "justification": "",
+        "confidence": 0.88,
+        "leverage": 25,
+        "risk_usd": 750,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 27.83% with $10740.15 in cash. Holding BTC with a 25x leverage and a profit target of 112000.0, I'm keeping this position as is for now."
+  },
+  {
+    "trade_id": "qwen3-max_7315",
+    "model_id": "qwen3-max",
+    "timestamp": 1761844833.65956,
+    "cycle_id": 7315,
+    "prev_cycle_id": 7314,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.47,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.47,
+        "entry_price": 108954.0,
+        "current_price": 107394.5,
+        "unrealized_pnl": -732.96,
+        "leverage": 25
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 20.4,
+      "account_value": 12040.37,
+      "available_cash": 12040.37,
+      "sharpe_ratio": 0.324
+    },
+    "prev_account_value": 12053.05,
+    "curr_account_value": 12040.37,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.424,
+        "stop_loss": 105195.65,
+        "signal": "buy_to_enter",
+        "profit_target": 109489.35,
+        "invalidation_condition": "4H close below 105000",
+        "justification": "BTC is deeply oversold on both 7-period RSI (18.35) and 14-period RSI (29.38), with price significantly below both 20-EMA and 50-EMA on the 4H chart. MACD is strongly negative but shows potential for reversal given extreme RSI and low volume (24.97 vs avg 4484), suggesting capitulation. Expect a mean-reversion bounce exceeding 1% to cover costs.",
+        "confidence": 0.78,
+        "leverage": 5,
+        "risk_usd": 900,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.424,
+        "stop_loss": 105195.65,
+        "signal": "buy_to_enter",
+        "profit_target": 109489.35,
+        "invalidation_condition": "4H close below 105000",
+        "justification": "BTC is deeply oversold on both 7-period RSI (18.35) and 14-period RSI (29.38), with price significantly below both 20-EMA and 50-EMA on the 4H chart. MACD is strongly negative but shows potential for reversal given extreme RSI and low volume (24.97 vs avg 4484), suggesting capitulation. Expect a mean-reversion bounce exceeding 1% to cover costs.",
+        "confidence": 0.78,
+        "leverage": 5,
+        "risk_usd": 900,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "Up 20% with ample cash, I'm seizing a moment of extreme oversold conditions on BTC, opening a 5x long position with $900 in risk. This move is fueled by a strong conviction in a mean-reversion bounce exceeding 1% to cover costs, with a clear stop-loss at $105195.65."
+  },
+  {
+    "trade_id": "qwen3-max_7316",
+    "model_id": "qwen3-max",
+    "timestamp": 1761844929.045077,
+    "cycle_id": 7316,
+    "prev_cycle_id": 7315,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.42,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.42,
+          "entry_price": 107323.0,
+          "current_price": 107072.5,
+          "unrealized_pnl": -105.21,
+          "leverage": 5
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.42,
+        "entry_price": 107323.0,
+        "current_price": 107072.5,
+        "unrealized_pnl": -105.21,
+        "leverage": 5
+      }
+    },
+    "account_info": {
+      "return_pct": 20.16,
+      "account_value": 12015.62,
+      "available_cash": 3023.89,
+      "sharpe_ratio": 0.324
+    },
+    "prev_account_value": 12040.37,
+    "curr_account_value": 12015.62,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.42,
+        "stop_loss": 105195.65,
+        "signal": "hold",
+        "profit_target": 109489.35,
+        "invalidation_condition": "4H close below 105000",
+        "justification": "",
+        "confidence": 0.78,
+        "leverage": 5,
+        "risk_usd": 900,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.42,
+        "stop_loss": 105195.65,
+        "signal": "hold",
+        "profit_target": 109489.35,
+        "invalidation_condition": "4H close below 105000",
+        "justification": "",
+        "confidence": 0.78,
+        "leverage": 5,
+        "risk_usd": 900,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "Up 20% overall, with $3023 cash and a $900 risk on BTC. I'm holding my current 5x leveraged BTC position as the data supports it, with a stop loss set at 105195.65 and a profit target of 109489.35."
+  },
+  {
+    "trade_id": "qwen3-max_7599",
+    "model_id": "qwen3-max",
+    "timestamp": 1761872185.691273,
+    "cycle_id": 7599,
+    "prev_cycle_id": 7598,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.42,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.42,
+        "entry_price": 107323.0,
+        "current_price": 109408.5,
+        "unrealized_pnl": 875.91,
+        "leverage": 5
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 28.61,
+      "account_value": 12861.43,
+      "available_cash": 12861.43,
+      "sharpe_ratio": 0.318
+    },
+    "prev_account_value": 12876.87,
+    "curr_account_value": 12861.43,
+    "llm_response": {
+      "DOGE": {
+        "quantity": 349890,
+        "stop_loss": 0.1865,
+        "signal": "sell_to_enter",
+        "profit_target": 0.1805,
+        "invalidation_condition": "Intraday RSI(7) drops below 70 before stop or target hit",
+        "justification": "DOGE is exhibiting an extreme intraday RSI(7) of 91.96, signaling overbought momentum that has detached from its 4-hour bearish structure (price below both 20- and 50-EMA, negative MACD). The intraday move lacks volume confirmation (current vol <5% of average), increasing the likelihood of a sharp mean-reversion. Shorting this euphoric spike offers asymmetric risk/reward with tight stop.",
+        "confidence": 0.78,
+        "leverage": 10,
+        "risk_usd": 643.07,
+        "coin": "DOGE"
+      }
+    },
+    "cot_trace": {
+      "DOGE": {
+        "quantity": 349890,
+        "stop_loss": 0.1865,
+        "signal": "sell_to_enter",
+        "profit_target": 0.1805,
+        "invalidation_condition": "Intraday RSI(7) drops below 70 before stop or target hit",
+        "justification": "DOGE is exhibiting an extreme intraday RSI(7) of 91.96, signaling overbought momentum that has detached from its 4-hour bearish structure (price below both 20- and 50-EMA, negative MACD). The intraday move lacks volume confirmation (current vol <5% of average), increasing the likelihood of a sharp mean-reversion. Shorting this euphoric spike offers asymmetric risk/reward with tight stop.",
+        "confidence": 0.78,
+        "leverage": 10,
+        "risk_usd": 643.07,
+        "coin": "DOGE"
+      }
+    },
+    "cot_trace_summary": "My account is up 28.61% with $12,861 in cash. I'm shorting DOGE with 10x leverage, betting on a mean reversion after an extreme RSI spike in what looks like a bearish trend."
+  },
+  {
+    "trade_id": "qwen3-max_7600",
+    "model_id": "qwen3-max",
+    "timestamp": 1761872283.881775,
+    "cycle_id": 7600,
+    "prev_cycle_id": 7599,
+    "position_changes": [
+      {
+        "symbol": "DOGE",
+        "prev_quantity": 0,
+        "curr_quantity": -349293.0,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "DOGE",
+          "quantity": -349293.0,
+          "entry_price": 0.18,
+          "current_price": 0.184545,
+          "unrealized_pnl": -68.81,
+          "leverage": 10
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "DOGE": {
+        "symbol": "DOGE",
+        "quantity": -349293.0,
+        "entry_price": 0.18,
+        "current_price": 0.184545,
+        "unrealized_pnl": -68.81,
+        "leverage": 10
+      }
+    },
+    "account_info": {
+      "return_pct": 28.7,
+      "account_value": 12870.17,
+      "available_cash": 6414.09,
+      "sharpe_ratio": 0.318
+    },
+    "prev_account_value": 12861.43,
+    "curr_account_value": 12870.17,
+    "llm_response": {
+      "DOGE": {
+        "quantity": -349293,
+        "stop_loss": 0.1865,
+        "signal": "hold",
+        "profit_target": 0.1805,
+        "invalidation_condition": "Intraday RSI(7) drops below 70 before stop or target hit",
+        "justification": "Intraday RSI(7) remains elevated at 90.683, but the invalidation condition — RSI(7) dropping below 70 — has not triggered. The position is slightly underwater but still within the predefined stop. Adhere to the original exit plan.",
+        "confidence": 0.78,
+        "leverage": 10,
+        "risk_usd": 643.07,
+        "coin": "DOGE"
+      }
+    },
+    "cot_trace": {
+      "DOGE": {
+        "quantity": -349293,
+        "stop_loss": 0.1865,
+        "signal": "hold",
+        "profit_target": 0.1805,
+        "invalidation_condition": "Intraday RSI(7) drops below 70 before stop or target hit",
+        "justification": "Intraday RSI(7) remains elevated at 90.683, but the invalidation condition — RSI(7) dropping below 70 — has not triggered. The position is slightly underwater but still within the predefined stop. Adhere to the original exit plan.",
+        "confidence": 0.78,
+        "leverage": 10,
+        "risk_usd": 643.07,
+        "coin": "DOGE"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 28.7% with $6414 cash on hand. I'm holding a slightly losing DOGE short position, but I'm sticking to the plan as the RSI remains high. I'll exit if the RSI drops below 70 or hit my stop-loss."
+  },
+  {
+    "trade_id": "qwen3-max_7603",
+    "model_id": "qwen3-max",
+    "timestamp": 1761872598.630845,
+    "cycle_id": 7603,
+    "prev_cycle_id": 7602,
+    "position_changes": [
+      {
+        "symbol": "DOGE",
+        "prev_quantity": -349293.0,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "DOGE": {
+        "symbol": "DOGE",
+        "quantity": -349293.0,
+        "entry_price": 0.18,
+        "current_price": 0.184105,
+        "unrealized_pnl": 84.88,
+        "leverage": 10
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 29.06,
+      "account_value": 12905.81,
+      "available_cash": 12905.81,
+      "sharpe_ratio": 0.318
+    },
+    "prev_account_value": 12835.24,
+    "curr_account_value": 12905.81,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.593,
+        "stop_loss": 108500,
+        "signal": "buy_to_enter",
+        "profit_target": 111500,
+        "invalidation_condition": "4-hour close below 107000",
+        "justification": "BTC shows a strong intraday bullish reversal: price broke above EMA20 with rising MACD and a sharp RSI recovery from oversold levels on the 4H. The 3-minute RSI dropped from 91 to 67, suggesting short-term exhaustion but macro structure remains constructive. Profit target set at recent swing high near 111500. Stop placed below local support at 108500. Expected move (~2200 pts) comfortably exceeds fees and risk.",
+        "confidence": 0.78,
+        "leverage": 20,
+        "risk_usd": 487.5,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.593,
+        "stop_loss": 108500,
+        "signal": "buy_to_enter",
+        "profit_target": 111500,
+        "invalidation_condition": "4-hour close below 107000",
+        "justification": "BTC shows a strong intraday bullish reversal: price broke above EMA20 with rising MACD and a sharp RSI recovery from oversold levels on the 4H. The 3-minute RSI dropped from 91 to 67, suggesting short-term exhaustion but macro structure remains constructive. Profit target set at recent swing high near 111500. Stop placed below local support at 108500. Expected move (~2200 pts) comfortably exceeds fees and risk.",
+        "confidence": 0.78,
+        "leverage": 20,
+        "risk_usd": 487.5,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "Up 29% with plenty of cash, I'm making a calculated move based on a strong bullish reversal signal for BTC. I'm opening a 20x long position with $487.5, targeting a profit at 111500 and a stop loss below 108500 to manage risk."
+  },
+  {
+    "trade_id": "qwen3-max_7604",
+    "model_id": "qwen3-max",
+    "timestamp": 1761872694.459465,
+    "cycle_id": 7604,
+    "prev_cycle_id": 7603,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.59,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.59,
+          "entry_price": 109301.0,
+          "current_price": 109541.5,
+          "unrealized_pnl": 141.89,
+          "leverage": 20
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.59,
+        "entry_price": 109301.0,
+        "current_price": 109541.5,
+        "unrealized_pnl": 141.89,
+        "leverage": 20
+      }
+    },
+    "account_info": {
+      "return_pct": 28.8,
+      "account_value": 12880.01,
+      "available_cash": 9680.31,
+      "sharpe_ratio": 0.318
+    },
+    "prev_account_value": 12905.81,
+    "curr_account_value": 12880.01,
+    "llm_response": {
+      "BTC": {
+        "quantity": 0.59,
+        "stop_loss": 108500,
+        "signal": "hold",
+        "profit_target": 111500,
+        "invalidation_condition": "4-hour close below 107000",
+        "justification": "",
+        "confidence": 0.78,
+        "leverage": 20,
+        "risk_usd": 487.5,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "quantity": 0.59,
+        "stop_loss": 108500,
+        "signal": "hold",
+        "profit_target": 111500,
+        "invalidation_condition": "4-hour close below 107000",
+        "justification": "",
+        "confidence": 0.78,
+        "leverage": 20,
+        "risk_usd": 487.5,
+        "coin": "BTC"
+      }
+    },
+    "cot_trace_summary": "My current portfolio is up 28.8% with $12,880, and I'm holding a 20x long BTC position with a profit target of 111500. I'm keeping this position as is, monitoring for a 4-hour close below 107000 to invalidate the trade."
+  },
+  {
+    "trade_id": "qwen3-max_10369",
+    "model_id": "qwen3-max",
+    "timestamp": 1762139625.406373,
+    "cycle_id": 10369,
+    "prev_cycle_id": 10368,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.59,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.59,
+        "entry_price": 109301.0,
+        "current_price": 108666.5,
+        "unrealized_pnl": -374.35,
+        "leverage": 20
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 24.4,
+      "account_value": 12439.99,
+      "available_cash": 12339.68,
+      "sharpe_ratio": 0.285
+    },
+    "prev_account_value": 12503.71,
+    "curr_account_value": 12439.99,
+    "llm_response": {
+      "BTC": {
+        "risk_usd": 565,
+        "leverage": 5,
+        "confidence": 0.72,
+        "quantity": 0.571,
+        "invalidation_condition": "4h close below 107000",
+        "profit_target": 110400,
+        "stop_loss": 107500,
+        "justification": "BTC is deeply oversold on the 7-period RSI (24.07) and has dropped below both 20-EMA and 50-EMA on the 4h chart, while funding is neutral and open interest stable. The intraday price rejection from ~109k into 108.5k shows potential short-term exhaustion. A bounce toward the 4h 20-EMA (~110.4k) is a realistic asymmetric move (~1.8%) that exceeds trading costs.",
+        "coin": "BTC",
+        "signal": "buy_to_enter"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "risk_usd": 565,
+        "leverage": 5,
+        "confidence": 0.72,
+        "quantity": 0.571,
+        "invalidation_condition": "4h close below 107000",
+        "profit_target": 110400,
+        "stop_loss": 107500,
+        "justification": "BTC is deeply oversold on the 7-period RSI (24.07) and has dropped below both 20-EMA and 50-EMA on the 4h chart, while funding is neutral and open interest stable. The intraday price rejection from ~109k into 108.5k shows potential short-term exhaustion. A bounce toward the 4h 20-EMA (~110.4k) is a realistic asymmetric move (~1.8%) that exceeds trading costs.",
+        "coin": "BTC",
+        "signal": "buy_to_enter"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 24.4% with over $12k cash, and I'm diving in with a 5x leveraged BTC long. I'm targeting a bounce toward the 4h 20-EMA, as BTC looks oversold and ready for a short-term upward correction."
+  },
+  {
+    "trade_id": "qwen3-max_10370",
+    "model_id": "qwen3-max",
+    "timestamp": 1762139723.963477,
+    "cycle_id": 10370,
+    "prev_cycle_id": 10369,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.56896,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.56896,
+          "entry_price": 108368.0,
+          "current_price": 108235.0,
+          "unrealized_pnl": -75.67,
+          "leverage": 5
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.56896,
+        "entry_price": 108368.0,
+        "current_price": 108235.0,
+        "unrealized_pnl": -75.67,
+        "leverage": 5
+      }
+    },
+    "account_info": {
+      "return_pct": 23.36,
+      "account_value": 12336.07,
+      "available_cash": 0.08,
+      "sharpe_ratio": 0.285
+    },
+    "prev_account_value": 12439.99,
+    "curr_account_value": 12336.07,
+    "llm_response": {
+      "BTC": {
+        "risk_usd": 565,
+        "leverage": 5,
+        "confidence": 0.72,
+        "quantity": 0.56896,
+        "invalidation_condition": "4h close below 107000",
+        "profit_target": 110400,
+        "stop_loss": 107500,
+        "justification": "",
+        "coin": "BTC",
+        "signal": "hold"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "risk_usd": 565,
+        "leverage": 5,
+        "confidence": 0.72,
+        "quantity": 0.56896,
+        "invalidation_condition": "4h close below 107000",
+        "profit_target": 110400,
+        "stop_loss": 107500,
+        "justification": "",
+        "coin": "BTC",
+        "signal": "hold"
+      }
+    },
+    "cot_trace_summary": "Up 23% overall, but currently holding a slight unrealized loss on my BTC position. With my cash fully deployed, I'm holding my current 5x leveraged BTC trade as is, with a plan to exit if it drops below 107000 or hits my profit target of 110400."
+  },
+  {
+    "trade_id": "qwen3-max_10402",
+    "model_id": "qwen3-max",
+    "timestamp": 1762142877.414346,
+    "cycle_id": 10402,
+    "prev_cycle_id": 10401,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.56896,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.56896,
+        "entry_price": 108368.0,
+        "current_price": 107548.5,
+        "unrealized_pnl": -466.26,
+        "leverage": 5
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 18.36,
+      "account_value": 11836.31,
+      "available_cash": 11836.31,
+      "sharpe_ratio": 0.285
+    },
+    "prev_account_value": 12029.2,
+    "curr_account_value": 11836.31,
+    "llm_response": {
+      "ETH": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "ETH 7-period RSI is at 18.32, nearing extreme oversold territory, and price has broken below the 20-EMA with a slight MACD dip. However, the move lacks strong volume confirmation and the longer-term picture remains bearish (4h EMA50 > EMA20). The risk-reward is less compelling than BTC due to weaker momentum divergence and smaller ATR expansion.",
+        "coin": "ETH",
+        "signal": "hold"
+      },
+      "DOGE": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "DOGE has an extreme 7-period RSI of 6.0, the lowest observed, and has dropped below its 20-EMA on low volume. While technically oversold, the absolute price move is tiny (0.0026), and ATR is minuscule. The potential PnL after fees is unlikely to be material even if a bounce occurs.",
+        "coin": "DOGE",
+        "signal": "hold"
+      },
+      "BTC": {
+        "risk_usd": 2367.26,
+        "leverage": 20,
+        "confidence": 0.82,
+        "quantity": 0.1106,
+        "invalidation_condition": "4h close below 105,000",
+        "profit_target": 110158.6,
+        "stop_loss": 106251.1,
+        "justification": "BTC is deeply oversold on the 7-period RSI (12.19), far below 15, and has sharply broken below its 20-EMA with a spike in negative MACD divergence on the 4h chart. Price has collapsed on extremely low volume (4.77 vs avg 4163), suggesting a panic flush rather than structural selling. The 3-min RSI is at an extreme low not seen in recent data, setting up a potential mean-reversion bounce toward the 20-EMA (~108.2k) or higher. Risk is well-contained with tight ATR levels.",
+        "coin": "BTC",
+        "signal": "buy_to_enter"
+      },
+      "XRP": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "XRP’s 7-period RSI is 19.5, mildly oversold, but price action is range-bound with minimal MACD movement. The 4h trend is still bearish and volume is very low. No strong edge for a trade.",
+        "coin": "XRP",
+        "signal": "hold"
+      },
+      "SOL": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "SOL shows an extreme 7-period RSI of 12.7 and a sharp intraday drop to 175.88, breaking below the 20-EMA. However, the MACD is only mildly negative and the 4h trend remains weak (EMA20 < EMA50). The ATR is very low, limiting expected move size. While oversold, the setup lacks strong confirmation for a large asymmetric move.",
+        "coin": "SOL",
+        "signal": "hold"
+      },
+      "BNB": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "BNB is oversold (7-period RSI 15.32) and broke below its 20-EMA, but volume is negligible (0.015 vs avg 8561), making the move unconvincing. The 4h trend is bearish and MACD is deteriorating. Not enough evidence for a high-confidence trade.",
+        "coin": "BNB",
+        "signal": "hold"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "ETH 7-period RSI is at 18.32, nearing extreme oversold territory, and price has broken below the 20-EMA with a slight MACD dip. However, the move lacks strong volume confirmation and the longer-term picture remains bearish (4h EMA50 > EMA20). The risk-reward is less compelling than BTC due to weaker momentum divergence and smaller ATR expansion.",
+        "coin": "ETH",
+        "signal": "hold"
+      },
+      "DOGE": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "DOGE has an extreme 7-period RSI of 6.0, the lowest observed, and has dropped below its 20-EMA on low volume. While technically oversold, the absolute price move is tiny (0.0026), and ATR is minuscule. The potential PnL after fees is unlikely to be material even if a bounce occurs.",
+        "coin": "DOGE",
+        "signal": "hold"
+      },
+      "BTC": {
+        "risk_usd": 2367.26,
+        "leverage": 20,
+        "confidence": 0.82,
+        "quantity": 0.1106,
+        "invalidation_condition": "4h close below 105,000",
+        "profit_target": 110158.6,
+        "stop_loss": 106251.1,
+        "justification": "BTC is deeply oversold on the 7-period RSI (12.19), far below 15, and has sharply broken below its 20-EMA with a spike in negative MACD divergence on the 4h chart. Price has collapsed on extremely low volume (4.77 vs avg 4163), suggesting a panic flush rather than structural selling. The 3-min RSI is at an extreme low not seen in recent data, setting up a potential mean-reversion bounce toward the 20-EMA (~108.2k) or higher. Risk is well-contained with tight ATR levels.",
+        "coin": "BTC",
+        "signal": "buy_to_enter"
+      },
+      "XRP": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "XRP’s 7-period RSI is 19.5, mildly oversold, but price action is range-bound with minimal MACD movement. The 4h trend is still bearish and volume is very low. No strong edge for a trade.",
+        "coin": "XRP",
+        "signal": "hold"
+      },
+      "SOL": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "SOL shows an extreme 7-period RSI of 12.7 and a sharp intraday drop to 175.88, breaking below the 20-EMA. However, the MACD is only mildly negative and the 4h trend remains weak (EMA20 < EMA50). The ATR is very low, limiting expected move size. While oversold, the setup lacks strong confirmation for a large asymmetric move.",
+        "coin": "SOL",
+        "signal": "hold"
+      },
+      "BNB": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "N/A",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "BNB is oversold (7-period RSI 15.32) and broke below its 20-EMA, but volume is negligible (0.015 vs avg 8561), making the move unconvincing. The 4h trend is bearish and MACD is deteriorating. Not enough evidence for a high-confidence trade.",
+        "coin": "BNB",
+        "signal": "hold"
+      }
+    },
+    "cot_trace_summary": "My portfolio is up 18.36% with $11836.31 cash, so I'm diving into BTC with a 20x long position, betting on a bounce from its oversold condition. I'm holding SOL, XRP, BNB, DOGE, and ETH for now, as their setups aren't as compelling."
+  },
+  {
+    "trade_id": "qwen3-max_10403",
+    "model_id": "qwen3-max",
+    "timestamp": 1762142976.998946,
+    "cycle_id": 10403,
+    "prev_cycle_id": 10402,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.11,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.11,
+          "entry_price": 107516.0,
+          "current_price": 107652.5,
+          "unrealized_pnl": 15.02,
+          "leverage": 20
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.11,
+        "entry_price": 107516.0,
+        "current_price": 107652.5,
+        "unrealized_pnl": 15.02,
+        "leverage": 20
+      }
+    },
+    "account_info": {
+      "return_pct": 18.34,
+      "account_value": 11834.0,
+      "available_cash": 11244.97,
+      "sharpe_ratio": 0.285
+    },
+    "prev_account_value": 11836.31,
+    "curr_account_value": 11834.0,
+    "llm_response": {
+      "BTC": {
+        "risk_usd": 2367.26,
+        "leverage": 20,
+        "confidence": 0.82,
+        "quantity": 0.11,
+        "invalidation_condition": "4h close below 105,000",
+        "profit_target": 110158.6,
+        "stop_loss": 106251.1,
+        "justification": "",
+        "coin": "BTC",
+        "signal": "hold"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "risk_usd": 2367.26,
+        "leverage": 20,
+        "confidence": 0.82,
+        "quantity": 0.11,
+        "invalidation_condition": "4h close below 105,000",
+        "profit_target": 110158.6,
+        "stop_loss": 106251.1,
+        "justification": "",
+        "coin": "BTC",
+        "signal": "hold"
+      }
+    },
+    "cot_trace_summary": "Up 18.34% with $11,834 total value, I'm holding my 20x BTC long position for now. My profit target is 110,158.6 and stop loss is at 106,251.1, with a cool confidence of 0.82."
+  },
+  {
+    "trade_id": "qwen3-max_10827",
+    "model_id": "qwen3-max",
+    "timestamp": 1762183849.976231,
+    "cycle_id": 10827,
+    "prev_cycle_id": 10826,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0.11,
+        "curr_quantity": 0,
+        "change_type": "close_position",
+        "position_details": {}
+      }
+    ],
+    "positions_before": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.11,
+        "entry_price": 107516.0,
+        "current_price": 106427.5,
+        "unrealized_pnl": -119.73,
+        "leverage": 20
+      }
+    },
+    "positions_after": {},
+    "account_info": {
+      "return_pct": 17.03,
+      "account_value": 11703.14,
+      "available_cash": 11689.31,
+      "sharpe_ratio": 0.277
+    },
+    "prev_account_value": 11786.63,
+    "curr_account_value": 11703.14,
+    "llm_response": {
+      "ETH": {
+        "risk_usd": 584.47,
+        "leverage": 5,
+        "confidence": 0.75,
+        "quantity": 15.82,
+        "invalidation_condition": "4H close below 3550",
+        "profit_target": 3716.47,
+        "stop_loss": 3607.16,
+        "justification": "ETH shows extreme intraday oversold (7-period RSI 12.7) near key psychological support. 4H trend is bearish but intraday bounce likely. Expected move >1.5% to clear fees.",
+        "coin": "ETH",
+        "signal": "buy_to_enter"
+      },
+      "DOGE": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "DOGE RSI(7) at 9.3 but price stuck in tight range with negligible ATR. Expected move too small to justify 0.09% cost. Skip.",
+        "coin": "DOGE",
+        "signal": "buy_to_enter"
+      },
+      "BTC": {
+        "risk_usd": 584.47,
+        "leverage": 5,
+        "confidence": 0.78,
+        "quantity": 0.551,
+        "invalidation_condition": "4H close below 104000",
+        "profit_target": 108222.51,
+        "stop_loss": 105039.49,
+        "justification": "BTC is deeply oversold on both 7-period (10.6) and 14-period (23.2) RSI, with price collapsing below EMA20 and EMA50 on 4H. MACD is strongly negative but nearing potential exhaustion. Expect a mean-reversion bounce exceeding 1% to cover fees and risk.",
+        "coin": "BTC",
+        "signal": "buy_to_enter"
+      },
+      "XRP": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "XRP RSI(7) at 12.2 with price below all EMAs but low volatility. Minimal expected bounce unlikely to exceed 0.09% trading cost hurdle. Skip.",
+        "coin": "XRP",
+        "signal": "buy_to_enter"
+      },
+      "SOL": {
+        "risk_usd": 877.15,
+        "leverage": 5,
+        "confidence": 0.8,
+        "quantity": 343.7,
+        "invalidation_condition": "4H close below 165",
+        "profit_target": 174.44,
+        "stop_loss": 166.77,
+        "justification": "SOL RSI(7) collapsed to 7.9—deeply oversold—with price gapping below EMA20. High open interest and low funding suggest short squeeze potential. Anticipate >3% bounce.",
+        "coin": "SOL",
+        "signal": "buy_to_enter"
+      },
+      "BNB": {
+        "risk_usd": 853.29,
+        "leverage": 5,
+        "confidence": 0.77,
+        "quantity": 587.5,
+        "invalidation_condition": "4H close below 970",
+        "profit_target": 1012.58,
+        "stop_loss": 976.15,
+        "justification": "BNB RSI(7) at 7.1—extreme oversold—with price breaking below EMA20 on low volume. Likely short-term bounce of >2% given low ATR and funding neutrality.",
+        "coin": "BNB",
+        "signal": "buy_to_enter"
+      }
+    },
+    "cot_trace": {
+      "ETH": {
+        "risk_usd": 584.47,
+        "leverage": 5,
+        "confidence": 0.75,
+        "quantity": 15.82,
+        "invalidation_condition": "4H close below 3550",
+        "profit_target": 3716.47,
+        "stop_loss": 3607.16,
+        "justification": "ETH shows extreme intraday oversold (7-period RSI 12.7) near key psychological support. 4H trend is bearish but intraday bounce likely. Expected move >1.5% to clear fees.",
+        "coin": "ETH",
+        "signal": "buy_to_enter"
+      },
+      "DOGE": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "DOGE RSI(7) at 9.3 but price stuck in tight range with negligible ATR. Expected move too small to justify 0.09% cost. Skip.",
+        "coin": "DOGE",
+        "signal": "buy_to_enter"
+      },
+      "BTC": {
+        "risk_usd": 584.47,
+        "leverage": 5,
+        "confidence": 0.78,
+        "quantity": 0.551,
+        "invalidation_condition": "4H close below 104000",
+        "profit_target": 108222.51,
+        "stop_loss": 105039.49,
+        "justification": "BTC is deeply oversold on both 7-period (10.6) and 14-period (23.2) RSI, with price collapsing below EMA20 and EMA50 on 4H. MACD is strongly negative but nearing potential exhaustion. Expect a mean-reversion bounce exceeding 1% to cover fees and risk.",
+        "coin": "BTC",
+        "signal": "buy_to_enter"
+      },
+      "XRP": {
+        "risk_usd": 0,
+        "leverage": 5,
+        "confidence": 0,
+        "quantity": 0,
+        "invalidation_condition": "",
+        "profit_target": 0,
+        "stop_loss": 0,
+        "justification": "XRP RSI(7) at 12.2 with price below all EMAs but low volatility. Minimal expected bounce unlikely to exceed 0.09% trading cost hurdle. Skip.",
+        "coin": "XRP",
+        "signal": "buy_to_enter"
+      },
+      "SOL": {
+        "risk_usd": 877.15,
+        "leverage": 5,
+        "confidence": 0.8,
+        "quantity": 343.7,
+        "invalidation_condition": "4H close below 165",
+        "profit_target": 174.44,
+        "stop_loss": 166.77,
+        "justification": "SOL RSI(7) collapsed to 7.9—deeply oversold—with price gapping below EMA20. High open interest and low funding suggest short squeeze potential. Anticipate >3% bounce.",
+        "coin": "SOL",
+        "signal": "buy_to_enter"
+      },
+      "BNB": {
+        "risk_usd": 853.29,
+        "leverage": 5,
+        "confidence": 0.77,
+        "quantity": 587.5,
+        "invalidation_condition": "4H close below 970",
+        "profit_target": 1012.58,
+        "stop_loss": 976.15,
+        "justification": "BNB RSI(7) at 7.1—extreme oversold—with price breaking below EMA20 on low volume. Likely short-term bounce of >2% given low ATR and funding neutrality.",
+        "coin": "BNB",
+        "signal": "buy_to_enter"
+      }
+    },
+    "cot_trace_summary": "With capital up 17%, I'm seizing opportunities presented by deeply oversold conditions. I'm initiating new 5x leveraged long positions in BNB, SOL, BTC, and ETH to capitalize on potential bounces."
+  },
+  {
+    "trade_id": "qwen3-max_10828",
+    "model_id": "qwen3-max",
+    "timestamp": 1762183960.778566,
+    "cycle_id": 10828,
+    "prev_cycle_id": 10827,
+    "position_changes": [
+      {
+        "symbol": "BTC",
+        "prev_quantity": 0,
+        "curr_quantity": 0.55,
+        "change_type": "open_position",
+        "position_details": {
+          "symbol": "BTC",
+          "quantity": 0.55,
+          "entry_price": 105803.0,
+          "current_price": 105813.5,
+          "unrealized_pnl": 5.78,
+          "leverage": 5
+        }
+      }
+    ],
+    "positions_before": {},
+    "positions_after": {
+      "BTC": {
+        "symbol": "BTC",
+        "quantity": 0.55,
+        "entry_price": 105803.0,
+        "current_price": 105813.5,
+        "unrealized_pnl": 5.78,
+        "leverage": 5
+      }
+    },
+    "account_info": {
+      "return_pct": 16.19,
+      "account_value": 11618.84,
+      "available_cash": 48.96,
+      "sharpe_ratio": 0.277
+    },
+    "prev_account_value": 11703.14,
+    "curr_account_value": 11618.84,
+    "llm_response": {
+      "BTC": {
+        "risk_usd": 584.47,
+        "leverage": 5,
+        "confidence": 0.78,
+        "quantity": 0.55,
+        "invalidation_condition": "4H close below 104000",
+        "profit_target": 108222.51,
+        "stop_loss": 105039.49,
+        "justification": "",
+        "coin": "BTC",
+        "signal": "hold"
+      }
+    },
+    "cot_trace": {
+      "BTC": {
+        "risk_usd": 584.47,
+        "leverage": 5,
+        "confidence": 0.78,
+        "quantity": 0.55,
+        "invalidation_condition": "4H close below 104000",
+        "profit_target": 108222.51,
+        "stop_loss": 105039.49,
+        "justification": "",
+        "coin": "BTC",
+        "signal": "hold"
+      }
+    },
+    "cot_trace_summary": "My current performance is up 16.19%, and I'm holding a BTC long position with 5x leverage, aiming for a profit target of 108222.51. I'm staying put for now, as the data indicates holding is the best strategy."
+  }
+]
